@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tukad Cepung Waterfall - Afly Bali Tour</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="../assets/logo.jpeg">
+  
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    
+    .breadcrumb {
+      background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+    }
+    
+    .price-card {
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      background: rgba(0, 95, 115, 0.1);
+      color: #005f73;
+    }
+
+    /* Optimasi rendering gambar */
+    .hero-image {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      -ms-interpolation-mode: bicubic;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- ===== Hero Section dengan Background Gambar ===== -->
+  <section class="relative text-white py-12 min-h-[600px] flex items-center">
+    <!-- Background Image HD dengan Overlay -->
+    <div class="absolute inset-0 z-0">
+      <picture>
+        <!-- WebP untuk browser modern -->
+        <source 
+          srcset="
+            ../media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg 480w,
+            ../media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg 768w,
+            ../media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg 1080w,
+            ../media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg 1920w
+          "
+          sizes="100vw"
+          type="image/webp"
+        >
+        <!-- JPG fallback -->
+        <source 
+          srcset="
+            ../media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg 480w,
+            ../media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg 768w,
+            ../media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg 1080w,
+            ../media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg 1920w
+          "
+          sizes="100vw"
+          type="image/jpeg"
+        >
+        <!-- Gambar default HD -->
+        <img 
+          src="../media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg" 
+          alt="Tukad Cepung Waterfall Background" 
+          class="w-full h-full object-cover hero-image"
+          loading="eager"
+          fetchpriority="high"
+          style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
+        >
+      </picture>
+      <div class="absolute inset-0 bg-black/50"></div> <!-- Overlay gelap agar teks terbaca -->
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <!-- Konten Teks -->
+        <div class="fade-in">
+          <!-- Rating -->
+          <div class="flex items-center mb-4">
+            <div class="flex text-yellow-400 mr-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="text-lg">4.5 (187 Review)</span>
+          </div>
+          
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            Tukad Cepung Waterfall
+          </h1>
+          
+          <p class="text-xl mb-8 leading-relaxed">
+            Temukan keajaiban air terjun tersembunyi di Bangli yang memancarkan cahaya matahari indah di antara celah-celah batu. Pengalaman trekking ringan yang akan membawa Anda pada spot foto paling instagramable di Bali.
+          </p>
+          
+          <div class="flex flex-wrap gap-4">
+            <a href="#booking" class="bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition duration-300 flex items-center">
+              <i class="fas fa-calendar-check mr-2"></i>
+              Booking This Product
+            </a>
+            <a href="https://wa.me/6281234567890" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition duration-300 flex items-center">
+              <i class="fab fa-whatsapp mr-2"></i>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Gambar Hero -->
+        <div class="fade-in">
+          <div class="rounded-2xl overflow-hidden shadow-2xl h-96 lg:h-[450px] relative border-4 border-white/20">
+            <picture>
+              <source srcset="../media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg" type="image/webp">
+              <img 
+                src="../media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg" 
+                alt="Tukad Cepung Waterfall" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+                style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
+              >
+            </picture>
+            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+              <div class="flex items-center text-white mb-2">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Bangli Regency, Bali, Indonesia</span>
+              </div>
+              <h3 class="text-xl font-bold">Hidden Gem Waterfall with Magical Light Beams</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Detail Paket ===== -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Konten Utama -->
+        <div class="lg:col-span-2">
+          <!-- Overview -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Overview</h2>
+            <div class="prose max-w-none text-gray-700">
+              <p class="text-lg mb-6">
+                Discover one of Bali's most unique and photogenic waterfalls, Tukad Cepung. Unlike typical waterfalls, Tukad Cepung is hidden within a cave, where sunlight streams through the opening above, creating magical light beams that illuminate the falling water.
+              </p>
+              
+              <p class="text-lg mb-6">
+                Located in the Bangli regency, this hidden gem requires a short and easy trek through beautiful bamboo forests and small streams. The journey itself is an adventure, and the destination is truly rewarding – a perfect spot for nature lovers and photography enthusiasts.
+              </p>
+            </div>
+          </div>
+
+          <!-- Highlights -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Tour Highlights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-blue-50 p-6 rounded-2xl">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-water"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Unique Cave Waterfall</h3>
+                </div>
+                <p class="text-gray-700">Waterfall nestled inside a cave with sunlight beams creating magical photo opportunities.</p>
+              </div>
+              
+              <div class="bg-blue-50 p-6 rounded-2xl">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-hiking"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Easy Trekking</h3>
+                </div>
+                <p class="text-gray-700">Short trek through bamboo forest and streams, suitable for all ages and fitness levels.</p>
+              </div>
+              
+              <div class="bg-blue-50 p-6 rounded-2xl">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-camera"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Photo Paradise</h3>
+                </div>
+                <p class="text-gray-700">One of Bali's most instagrammable spots with unique light rays and cave formations.</p>
+              </div>
+              
+              <div class="bg-blue-50 p-6 rounded-2xl">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-leaf"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Natural Beauty</h3>
+                </div>
+                <p class="text-gray-700">Surrounded by lush greenery and pristine nature, away from crowded tourist areas.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Itinerary -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Tour Itinerary</h2>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">1</div>
+                <div>
+                  <h3 class="font-bold text-lg">Pick Up from Hotel</h3>
+                  <p class="text-gray-600">08:00 AM - Our driver will pick you up from your hotel in South Bali area</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">2</div>
+                <div>
+                  <h3 class="font-bold text-lg">Arrival at Tukad Cepung</h3>
+                  <p class="text-gray-600">09:30 AM - Arrive at the parking area and begin your trek</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">3</div>
+                <div>
+                  <h3 class="font-bold text-lg">Trek to Waterfall</h3>
+                  <p class="text-gray-600">09:45 AM - Short trek through bamboo forest (about 15-20 minutes)</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">4</div>
+                <div>
+                  <h3 class="font-bold text-lg">Explore & Photo Session</h3>
+                  <p class="text-gray-600">10:15 AM - Enjoy the waterfall, take photos, and swim in the cool water</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">5</div>
+                <div>
+                  <h3 class="font-bold text-lg">Return Trek</h3>
+                  <p class="text-gray-600">11:30 AM - Trek back to the parking area</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">6</div>
+                <div>
+                  <h3 class="font-bold text-lg">Return to Hotel</h3>
+                  <p class="text-gray-600">12:30 PM - Arrive back at your hotel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tips Section -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Tips for Your Visit</h2>
+            <div class="bg-yellow-50 p-6 rounded-2xl">
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <i class="fas fa-lightbulb text-yellow-600 mr-3 mt-1"></i>
+                  <span>Best time to visit is between 9 AM - 11 AM when sunlight creates beautiful light beams</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-lightbulb text-yellow-600 mr-3 mt-1"></i>
+                  <span>Wear water shoes or sandals as you'll need to walk through shallow streams</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-lightbulb text-yellow-600 mr-3 mt-1"></i>
+                  <span>Bring a waterproof bag for your electronics</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-lightbulb text-yellow-600 mr-3 mt-1"></i>
+                  <span>Don't forget your swimwear if you want to take a dip</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-lightbulb text-yellow-600 mr-3 mt-1"></i>
+                  <span>Bring a towel and change of clothes</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Gallery -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="rounded-xl overflow-hidden h-32">
+                <img src="../galery/Tukad Cepung Waterfall_ A Hidden Gem in Bali You Must Visit In 2023.jfif" alt="Tukad Cepung Light Beams" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+              </div>
+              <div class="rounded-xl overflow-hidden h-32">
+                <img src="../galery/Tukad Cepung Waterfall In Bali_ How To Visit.jfif" alt="Tukad Cepung Cave" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+              </div>
+              <div class="rounded-xl overflow-hidden h-32">
+                <img src="../galery/Air Terjun Tukad Cepung Bali, Indahnya Air Terjun Dibalik Tebing.jfif" alt="Tukad Cepung Trek" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+              </div>
+            </div>
+          </div>
+
+          <!-- What's Included -->
+          <div class="fade-in">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">What's Included</h2>
+            <div class="bg-green-50 p-6 rounded-2xl mb-6">
+              <h3 class="text-xl font-bold text-green-800 mb-4">✅ Included in Package:</h3>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-green-700">
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Private car with AC
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Professional English-speaking driver
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Fuel and parking fees
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Mineral water
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Hotel pickup and drop-off
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Local guide service
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-red-50 p-6 rounded-2xl">
+              <h3 class="text-xl font-bold text-red-800 mb-4">❌ Not Included:</h3>
+              <ul class="text-red-700">
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Entrance ticket (approx. IDR 20,000/person)
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Meals and beverages
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Personal expenses
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar - Booking Card -->
+        <div class="lg:col-span-1">
+          <div id="booking" class="price-card bg-white rounded-2xl shadow-xl p-6 sticky top-32 fade-in">
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-bold text-[#005f73] mb-2">Tukad Cepung Waterfall</h3>
+              <div class="flex items-center justify-center text-yellow-400 mb-4">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="text-gray-600 ml-2 text-sm">4.5 (187 Review)</span>
+              </div>
+            </div>
+            
+            <div class="bg-blue-50 p-4 rounded-xl mb-6">
+              <div class="text-center">
+                <span class="text-3xl font-bold text-[#005f73]">IDR 400.000</span>
+                <p class="text-gray-600 text-sm">Harga per mobil (maks. 6 orang)</p>
+                <p class="text-xs text-gray-500 mt-1">≈ USD 25 /car</p>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <a href="../booking/booking.html?package=tukad-cepung" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-4 rounded-xl font-bold text-lg hover:opacity-90 transition">
+                <i class="fas fa-calendar-check mr-2"></i>
+                Book Now
+              </a>
+              
+              <a href="https://wa.me/6282144094585?text=Halo,%20saya%20ingin%20bertanya%20tentang%20paket%20Tukad%20Cepung%20Waterfall" 
+                 class="block w-full bg-green-500 text-white text-center py-4 rounded-xl font-bold text-lg hover:bg-green-600 transition flex items-center justify-center">
+                <i class="fab fa-whatsapp mr-2"></i>
+                WhatsApp
+              </a>
+            </div>
+            
+            <div class="mt-6 pt-6 border-t border-gray-200">
+              <h4 class="font-bold text-[#005f73] mb-3">Package Details:</h4>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-center">
+                  <i class="fas fa-clock text-[#005f73] mr-3"></i>
+                  <span>Duration: Half Day (4-5 hours)</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-users text-[#005f73] mr-3"></i>
+                  <span>Max Capacity: 6 people per car</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-map-marker-alt text-[#005f73] mr-3"></i>
+                  <span>Location: Bangli Regency</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-calendar text-[#005f73] mr-3"></i>
+                  <span>Available: Daily</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-hiking text-[#005f73] mr-3"></i>
+                  <span>Trekking: Easy (15-20 minutes)</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="mt-4 text-xs text-gray-500 text-center">
+              *Entrance ticket not included
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimoni Section ===== -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12 fade-in">
+        <h2 class="text-3xl font-bold text-[#005f73] mb-4">What Our Customers Say</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Lebih dari 500 wisatawan telah menjelajahi keindahan Tukad Cepung bersama kami
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-2xl shadow-lg fade-in">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-[#005f73] to-[#0077b6] rounded-full flex items-center justify-center text-white font-bold mr-4">
+              M
+            </div>
+            <div>
+              <h4 class="font-bold text-[#005f73]">Made Suparta</h4>
+              <div class="flex text-yellow-400 text-sm">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Air terjunnya sungguh unik! Sinar matahari yang masuk ke dalam gua menciptakan pemandangan yang magical. Recommended banget buat foto-foto!"
+          </p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-2xl shadow-lg fade-in">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-[#005f73] to-[#0077b6] rounded-full flex items-center justify-center text-white font-bold mr-4">
+              L
+            </div>
+            <div>
+              <h4 class="font-bold text-[#005f73]">Laura Wilson</h4>
+              <div class="flex text-yellow-400 text-sm">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "The light beams are incredible! Best time to visit is around 10 AM. The trek is easy and our guide was very helpful. A must-visit in Bali!"
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- ===== Footer ===== -->
+  <footer class="bg-[#005f73] text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
+              <span class="text-[#005f73] font-bold text-xl">A</span>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-white">Afly Bali Tour</h1>
+              <p class="text-xs text-gray-300 -mt-1">Explore Paradise</p>
+            </div>
+          </div>
+          <p class="text-gray-300 text-sm">
+            Penyedia paket wisata Bali terpercaya dengan pengalaman lebih dari 5 tahun melayani wisatawan domestik dan mancanegara.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Tautan Cepat</h3>
+          <ul class="space-y-2">
+            <li><a href="../index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+            <li><a href="../galeri/galeri.html" class="text-gray-300 hover:text-white transition">Galeri</a></li>
+            <li><a href="../paket/paket.html" class="text-gray-300 hover:text-white transition">Paket Wisata</a></li>
+            <li><a href="../booking/booking.html" class="text-gray-300 hover:text-white transition">Booking</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Kontak Kami</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-center">
+              <i class="fas fa-map-marker-alt mr-3 text-sm"></i>
+              <span>Denpasar, Bali, Indonesia</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3 text-sm"></i>
+              <span>aflybali@gmail.com</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone mr-3 text-sm"></i>
+              <span>+62 812-3456-7890</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Follow Kami</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300 text-sm">
+        <p>© 2025 Afly Bali Tour. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/navbar-loader.js"></script>
+  <script>
+    // Animasi fade in saat scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      
+      const fadeInOnScroll = function() {
+        fadeElements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+          
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+          }
+        });
+      };
+      
+      // Set initial state
+      fadeElements.forEach(element => {
+        element.style.opacity = "0";
+        element.style.transform = "translateY(30px)";
+        element.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+      });
+      
+      // Check on load and scroll
+      window.addEventListener('scroll', fadeInOnScroll);
+      fadeInOnScroll();
+    });
+
+    // Cek resolusi gambar hero
+    window.addEventListener('load', function() {
+      const heroImage = document.querySelector('.absolute.inset-0.z-0 img');
+      if (heroImage) {
+        console.log('Hero Image Resolution:', heroImage.naturalWidth, 'x', heroImage.naturalHeight);
+        if (heroImage.naturalWidth < 1920) {
+          console.log('⚠️ Gunakan gambar dengan resolusi minimal 1920x1080 untuk hasil terbaik');
+        }
+      }
+    });
+  </script>
+</body>
+</html>

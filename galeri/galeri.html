@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - Afly Bali Tour</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+  <!-- Hardcoded Navbar Temporary -->
+  <nav class="bg-white/95 backdrop-blur-md shadow-lg fixed w-full z-50 transition-all duration-300">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <a href="../index.html" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#005f73] to-[#0077b6] rounded-xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
+                    <span class="text-white font-bold text-xl">A</span>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-[#005f73] to-[#0077b6] bg-clip-text text-transparent">Afly Bali Tour</h1>
+                    <p class="text-xs text-gray-500 -mt-1">Explore Paradise</p>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-2">
+                <li>
+                    <a href="../index.html" class="px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="galeri.html" class="px-4 py-2 text-[#005f73] bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium">
+                        Galeri
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#paket" class="px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium">
+                        Paket Wisata
+                    </a>
+                </li>
+                <li>
+                    <a href="../booking/booking.html" class="bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white px-6 py-2.5 rounded-full font-semibold text-base shadow-lg hover:scale-105 transform transition duration-300">
+                        Booking Now
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#kontak" class="px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium">
+                        Kontak
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                <svg class="w-6 h-6 text-[#005f73]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+  </nav>
+
+  <!-- ===== Halaman Galeri dengan 17 Foto (Tanpa Filter) ===== -->
+  <section id="galeri" class="py-16 bg-[#f8fafc] min-h-screen">
+    <div class="container mx-auto px-4">
+        
+        <!-- Header -->
+        <br>
+        <div class="text-center mb-12 fade-in">
+            <span class="text-[#0077b6] font-semibold text-lg">Explore Paradise</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#005f73] mb-4 mt-2">Galeri Wisata Bali</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Jelajahi keindahan Bali melalui koleksi foto-foto destinasi wisata terbaik kami
+            </p>
+        </div>
+
+        <!-- Grid Galeri 17 Foto -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 gallery-grid">
+            
+            <!-- Foto 1 - Pura Ulun Danu Bedugul -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/airport.jpeg" alt="Pura Ulun Danu Bedugul" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">I Gusti Ngurah Rai</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Airport
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 2 - Pantai Kuta -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/batur mountain.jpeg" alt="Pantai Kuta" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Batur Mountain</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Mountain
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 3 - Tegalalang Rice Terrace -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/bedugul 3.jpeg" alt="Tegalalang Rice Terrace" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Bedugul</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Bedugul
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 4 - GWK Cultural Park -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/diving.jpeg" alt="GWK Cultural Park" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Diving</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Bali Fun Activities
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 5 - Air Terjun Gitgit -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/Elephant riding.jpeg" alt="Air Terjun Gitgit" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Elephant Ridding</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Bali Zoo
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 6 - Pantai Pandawa -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/bedugul.jpeg" alt="Pantai Pandawa" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Bedugul</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Bedugul
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 7 - Pura Tanah Lot -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/kintamani resto.jpeg" alt="Pura Tanah Lot" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Kintamani Resto</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Kintamani
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 8 - Kintamani Volcano -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/bedugull.jpeg" alt="Kintamani Volcano" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Bedugul</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Bedugul
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 9 - Tari Kecak -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/lempuyang.jpeg" alt="Tari Kecak" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Lempuyang Tample</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Lempuyang
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 10 - Nusa Penida -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/pantai.jpeg" alt="Kelingking Beach Nusa Penida" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Pantai Nusa Dua</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Nusa Dua
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 11 - Tirta Gangga -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/rafting 2.jpeg" alt="Tirta Gangga" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Rafting</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Bali Fun Activities
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 12 - Ubud Monkey Forest -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/tampak siring.jpeg" alt="Ubud Monkey Forest" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Cofee plantation tampak Siring</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Tampak Siring
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 13 - Air Terjun Sekumpul -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/rafting.jpeg" alt="Air Terjun Sekumpul" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Rafting</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Bali Fun Activities
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 14 - Pantai Jimbaran -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/zoo.jpeg" alt="Pantai Jimbaran" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">I Gusti Ngurah Rai</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Airport
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 15 - Pura Lempuyang -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/tirta gangga.jpeg" alt="Pura Lempuyang" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Tirta Gangga</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Karangasem
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 16 - Lovina Dolphin -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/restouran.jpeg" alt="Lovina Dolphin" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">Restourant</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Gianyar
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 17 - Taman Ujung -->
+            <div class="gallery-item relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                <img src="../galery/otw.jpeg" alt="Taman Ujung" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 left-0 right-0 p-5 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-lg font-bold">On The Way</h3>
+                        <p class="text-sm text-gray-200 flex items-center mt-1">
+                            <i class="fas fa-map-marker-alt mr-1 text-[#0077b6]"></i> Karangasem
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
+                <div class="text-3xl font-bold text-[#005f73]">17+</div>
+                <div class="text-sm text-gray-600 mt-1">Destinasi</div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
+                <div class="text-3xl font-bold text-[#005f73]">50+</div>
+                <div class="text-sm text-gray-600 mt-1">Paket Wisata</div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
+                <div class="text-3xl font-bold text-[#005f73]">1000+</div>
+                <div class="text-sm text-gray-600 mt-1">Wisatawan</div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
+                <div class="text-3xl font-bold text-[#005f73]">5/5</div>
+                <div class="text-sm text-gray-600 mt-1">Ulasan</div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Modal untuk Preview Gambar -->
+  <div id="imageModal" class="fixed inset-0 bg-black/95 z-50 hidden items-center justify-center p-4">
+    <button id="closeModal" class="absolute top-4 right-4 text-white text-5xl hover:text-gray-300 transition z-50">&times;</button>
+    <button id="prevImage" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-5xl hover:text-gray-300 transition z-50 opacity-70 hover:opacity-100">&lsaquo;</button>
+    <img id="modalImage" src="" alt="Preview" class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl">
+    <button id="nextImage" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-5xl hover:text-gray-300 transition z-50 opacity-70 hover:opacity-100">&rsaquo;</button>
+    <div id="imageCaption" class="absolute bottom-8 left-0 right-0 text-center text-white text-xl font-semibold"></div>
+  </div>
+
+  <script>
+    // Simple mobile menu for temporary navbar
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function() {
+          alert('Mobile menu would open here. This is temporary navbar.');
+        });
+      }
+
+      // Modal functionality
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const caption = document.getElementById('imageCaption');
+      const closeBtn = document.getElementById('closeModal');
+      const prevBtn = document.getElementById('prevImage');
+      const nextBtn = document.getElementById('nextImage');
+      
+      const images = Array.from(document.querySelectorAll('.gallery-item'));
+      let currentIndex = 0;
+
+      // Open modal on image click
+      images.forEach((item, index) => {
+          item.addEventListener('click', function() {
+              const img = this.querySelector('img');
+              const title = this.querySelector('h3')?.textContent || '';
+              const location = this.querySelector('p')?.textContent?.replace(/\s+/g, ' ').trim() || '';
+              
+              modalImg.src = img.src;
+              caption.innerHTML = `<span class="text-[#0077b6]">${title}</span> - ${location}`;
+              modal.classList.remove('hidden');
+              modal.classList.add('flex');
+              document.body.style.overflow = 'hidden';
+              currentIndex = index;
+          });
+      });
+
+      // Navigate to previous image
+      function showPrevImage() {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          const img = images[currentIndex].querySelector('img');
+          const title = images[currentIndex].querySelector('h3')?.textContent || '';
+          const location = images[currentIndex].querySelector('p')?.textContent?.replace(/\s+/g, ' ').trim() || '';
+          modalImg.src = img.src;
+          caption.innerHTML = `<span class="text-[#0077b6]">${title}</span> - ${location}`;
+      }
+
+      // Navigate to next image
+      function showNextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          const img = images[currentIndex].querySelector('img');
+          const title = images[currentIndex].querySelector('h3')?.textContent || '';
+          const location = images[currentIndex].querySelector('p')?.textContent?.replace(/\s+/g, ' ').trim() || '';
+          modalImg.src = img.src;
+          caption.innerHTML = `<span class="text-[#0077b6]">${title}</span> - ${location}`;
+      }
+
+      // Event listeners
+      if (prevBtn) prevBtn.addEventListener('click', showPrevImage);
+      if (nextBtn) nextBtn.addEventListener('click', showNextImage);
+      
+      if (closeBtn) {
+          closeBtn.addEventListener('click', () => {
+              modal.classList.add('hidden');
+              modal.classList.remove('flex');
+              document.body.style.overflow = 'auto';
+          });
+      }
+
+      // Keyboard navigation
+      document.addEventListener('keydown', function(e) {
+          if (!modal.classList.contains('flex')) return;
+          
+          if (e.key === 'Escape') {
+              modal.classList.add('hidden');
+              modal.classList.remove('flex');
+              document.body.style.overflow = 'auto';
+          } else if (e.key === 'ArrowLeft') {
+              showPrevImage();
+          } else if (e.key === 'ArrowRight') {
+              showNextImage();
+          }
+      });
+
+      // Click outside to close
+      modal.addEventListener('click', function(e) {
+          if (e.target === modal) {
+              modal.classList.add('hidden');
+              modal.classList.remove('flex');
+              document.body.style.overflow = 'auto';
+          }
+      });
+    });
+  </script>
+
+  <style>
+    .gallery-item {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        animation: fadeInUp 0.6s ease backwards;
+    }
+    
+    .gallery-item:nth-child(1) { animation-delay: 0.1s; }
+    .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+    .gallery-item:nth-child(3) { animation-delay: 0.3s; }
+    .gallery-item:nth-child(4) { animation-delay: 0.4s; }
+    .gallery-item:nth-child(5) { animation-delay: 0.5s; }
+    .gallery-item:nth-child(6) { animation-delay: 0.6s; }
+    .gallery-item:nth-child(7) { animation-delay: 0.7s; }
+    .gallery-item:nth-child(8) { animation-delay: 0.8s; }
+    .gallery-item:nth-child(9) { animation-delay: 0.9s; }
+    .gallery-item:nth-child(10) { animation-delay: 1.0s; }
+    .gallery-item:nth-child(11) { animation-delay: 1.1s; }
+    .gallery-item:nth-child(12) { animation-delay: 1.2s; }
+    .gallery-item:nth-child(13) { animation-delay: 1.3s; }
+    .gallery-item:nth-child(14) { animation-delay: 1.4s; }
+    .gallery-item:nth-child(15) { animation-delay: 1.5s; }
+    .gallery-item:nth-child(16) { animation-delay: 1.6s; }
+    .gallery-item:nth-child(17) { animation-delay: 1.7s; }
+    
+    .gallery-item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 30px -10px rgba(0, 95, 115, 0.3);
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    #imageModal {
+        backdrop-filter: blur(8px);
+        transition: all 0.3s ease;
+    }
+
+    #modalImage {
+        box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.5);
+    }
+
+    .fade-in {
+        animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+  </style>
+
+</body>
+</html>

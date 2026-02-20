@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - Afly Bali Tour</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+  <!-- Hardcoded Navbar Temporary -->
+  <nav class="bg-white/95 backdrop-blur-md shadow-lg fixed w-full z-50 transition-all duration-300">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <a href="../index.html" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#005f73] to-[#0077b6] rounded-xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
+                    <span class="text-white font-bold text-xl">A</span>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-[#005f73] to-[#0077b6] bg-clip-text text-transparent">Afly Bali Tour</h1>
+                    <p class="text-xs text-gray-500 -mt-1">Explore Paradise</p>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-2">
+                <li>
+                    <a href="../index.html" class="px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../galeri/galeri.html" class="px-4 py-2 text-[#005f73] bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium">
+                        Galeri
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#paket" class="px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium">
+                        Paket Wisata
+                    </a>
+                </li>
+                <li>
+                    <a href="../booking/booking.html" class="bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white px-6 py-2.5 rounded-full font-semibold text-base shadow-lg hover:scale-105 transform transition duration-300">
+                        Booking Now
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html#kontak" class="px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium">
+                        Kontak
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                <svg class="w-6 h-6 text-[#005f73]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+  </nav>
+
+  <!-- ===== Halaman Booking Paket Wisata ===== -->
+<section id="booking" class="py-16 bg-[#f8fafc] min-h-screen">
+    <div class="container mx-auto px-4">
+        
+        <!-- Header -->
+         <br>
+        <div class="text-center mb-12 fade-in">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-4">Booking Paket Wisata</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Pilih paket wisata yang Anda inginkan dan lakukan pemesanan melalui WhatsApp
+            </p>
+        </div>
+
+        <!-- Grid Paket Booking -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Paket 1 - Bedugul -->
+            <div class="booking-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
+                <img src="../assets/bedugul.jpeg" alt="Bedugul Tour" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#005f73] mb-2">Bedugul Tour</h3>
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="fas fa-clock text-[#005f73] mr-2"></i>
+                        <span>1 Day Tour</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-[#005f73]">Rp 700.000</span>
+                        <span class="text-sm text-gray-500">/paket</span>
+                    </div>
+                    
+                    <!-- Form Booking -->
+                    <div class="space-y-3 mb-4">
+                        <input type="date" id="date-bedugul" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                        <select id="guests-bedugul" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3">3 Orang</option>
+                            <option value="4">4 Orang</option>
+                            <option value="5">5+ Orang</option>
+                        </select>
+                        <textarea id="notes-bedugul" placeholder="Catatan tambahan (opsional)" rows="2" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]"></textarea>
+                    </div>
+
+                    <button onclick="bookViaWhatsApp('Bedugul Tour', 700000, 'date-bedugul', 'guests-bedugul', 'notes-bedugul')" 
+                            class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        Booking via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Paket 2 - Heaven Gate & Tirta Gangga -->
+            <div class="booking-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
+                <img src="../assets/tirta gangga.jpeg" alt="Heaven Gate & Tirta Gangga" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#005f73] mb-2">Heaven Gate & Tirta Gangga</h3>
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="fas fa-clock text-[#005f73] mr-2"></i>
+                        <span>1 Day Tour</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-[#005f73]">Rp 700.000</span>
+                        <span class="text-sm text-gray-500">/paket</span>
+                    </div>
+                    
+                    <div class="space-y-3 mb-4">
+                        <input type="date" id="date-tirtagangga" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                        <select id="guests-tirtagangga" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3">3 Orang</option>
+                            <option value="4">4 Orang</option>
+                            <option value="5">5+ Orang</option>
+                        </select>
+                        <textarea id="notes-tirtagangga" placeholder="Catatan tambahan (opsional)" rows="2" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]"></textarea>
+                    </div>
+
+                    <button onclick="bookViaWhatsApp('Heaven Gate & Tirta Gangga', 700000, 'date-tirtagangga', 'guests-tirtagangga', 'notes-tirtagangga')" 
+                            class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        Booking via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Paket 3 - Lovina & Git Git Waterfall -->
+            <div class="booking-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
+                <img src="../media/water.jpeg" alt="Lovina & Git Git Waterfall" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#005f73] mb-2">Lovina & Git Git Waterfall</h3>
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="fas fa-clock text-[#005f73] mr-2"></i>
+                        <span>12 Hours Tour</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-[#005f73]">Rp 800.000</span>
+                        <span class="text-sm text-gray-500">/paket</span>
+                    </div>
+                    
+                    <div class="space-y-3 mb-4">
+                        <input type="date" id="date-lovina" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                        <select id="guests-lovina" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3">3 Orang</option>
+                            <option value="4">4 Orang</option>
+                            <option value="5">5+ Orang</option>
+                        </select>
+                        <textarea id="notes-lovina" placeholder="Catatan tambahan (opsional)" rows="2" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]"></textarea>
+                    </div>
+
+                    <button onclick="bookViaWhatsApp('Lovina & Git Git Waterfall', 800000, 'date-lovina', 'guests-lovina', 'notes-lovina')" 
+                            class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        Booking via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Paket 4 - Nusa Dua & Uluwatu -->
+            <div class="booking-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
+                <img src="../media/Luxury resort in Bali, Ubud.jpeg" alt="Nusa Dua & Uluwatu" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#005f73] mb-2">Nusa Dua & Uluwatu Temple</h3>
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="fas fa-clock text-[#005f73] mr-2"></i>
+                        <span>1 Day Tour</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-[#005f73]">Rp 500.000</span>
+                        <span class="text-sm text-gray-500">/car</span>
+                    </div>
+                    
+                    <div class="space-y-3 mb-4">
+                        <input type="date" id="date-uluwatu" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                        <select id="guests-uluwatu" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                            <option value="1-2">1-2 Orang</option>
+                            <option value="3-4">3-4 Orang</option>
+                            <option value="5-6">5-6 Orang</option>
+                        </select>
+                        <textarea id="notes-uluwatu" placeholder="Catatan tambahan (opsional)" rows="2" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]"></textarea>
+                    </div>
+
+                    <button onclick="bookViaWhatsApp('Nusa Dua & Uluwatu Temple', 500000, 'date-uluwatu', 'guests-uluwatu', 'notes-uluwatu')" 
+                            class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        Booking via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Paket 5 - Nusa Penida -->
+            <div class="booking-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
+                <img src="../media/The Westin Resort Nusa Dua, Bali is perfect for families.jpeg" alt="Nusa Penida" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#005f73] mb-2">Nusa Penida Island Tour</h3>
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="fas fa-clock text-[#005f73] mr-2"></i>
+                        <span>Full Day Tour</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-[#005f73]">Rp 1.000.000</span>
+                        <span class="text-sm text-gray-500">/paket</span>
+                    </div>
+                    
+                    <div class="space-y-3 mb-4">
+                        <input type="date" id="date-penida" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                        <select id="trip-penida" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                            <option value="West Trip">West Trip (Kelingking, Broken Beach)</option>
+                            <option value="East Trip">East Trip (Diamond Beach, Atuh)</option>
+                        </select>
+                        <select id="guests-penida" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3">3 Orang</option>
+                            <option value="4">4 Orang</option>
+                        </select>
+                        <textarea id="notes-penida" placeholder="Catatan tambahan (opsional)" rows="2" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]"></textarea>
+                    </div>
+
+                    <button onclick="bookNusaPenida()" 
+                            class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        Booking via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Paket 6 - Ubud & Tanah Lot -->
+            <div class="booking-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
+                <img src="../media/Tanah Lot Temple (1).jpeg" alt="Ubud & Tanah Lot" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#005f73] mb-2">Ubud & Tanah Lot Tour</h3>
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="fas fa-clock text-[#005f73] mr-2"></i>
+                        <span>1 Day Tour</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-[#005f73]">Rp 600.000</span>
+                        <span class="text-sm text-gray-500">/paket</span>
+                    </div>
+                    
+                    <div class="space-y-3 mb-4">
+                        <input type="date" id="date-ubud" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                        <select id="guests-ubud" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3">3 Orang</option>
+                            <option value="4">4 Orang</option>
+                            <option value="5">5+ Orang</option>
+                        </select>
+                        <textarea id="notes-ubud" placeholder="Catatan tambahan (opsional)" rows="2" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]"></textarea>
+                    </div>
+
+                    <button onclick="bookViaWhatsApp('Ubud & Tanah Lot Tour', 600000, 'date-ubud', 'guests-ubud', 'notes-ubud')" 
+                            class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        Booking via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Paket 7 - Bali Fun Activities -->
+            <div class="booking-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
+                <img src="../media/bali.jpeg" alt="Bali Fun Activities" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#005f73] mb-2">Bali Fun Activities</h3>
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="fas fa-clock text-[#005f73] mr-2"></i>
+                        <span>Half Day Activity</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-[#005f73]">Rp 300.000</span>
+                        <span class="text-sm text-gray-500">/aktivitas</span>
+                    </div>
+                    
+                    <div class="space-y-3 mb-4">
+                        <input type="date" id="date-fun" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                        <select id="activity-fun" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                            <option value="Rafting">Rafting</option>
+                            <option value="Parasailing">Parasailing</option>
+                            <option value="Jet Ski">Jet Ski</option>
+                            <option value="Banana Boat">Banana Boat</option>
+                            <option value="Package">Package (All Activities)</option>
+                        </select>
+                        <select id="guests-fun" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3">3 Orang</option>
+                            <option value="4">4 Orang</option>
+                        </select>
+                        <textarea id="notes-fun" placeholder="Catatan tambahan (opsional)" rows="2" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]"></textarea>
+                    </div>
+
+                    <button onclick="bookFunActivities()" 
+                            class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        Booking via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Paket 8 - Bali Zoo -->
+            <div class="booking-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
+                <img src="../media/download (34).jpeg" alt="Bali Zoo" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#005f73] mb-2">Bali Zoo Experience</h3>
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="fas fa-clock text-[#005f73] mr-2"></i>
+                        <span>Half Day Experience</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-[#005f73]">Rp 1.000.000</span>
+                        <span class="text-sm text-gray-500">/paket</span>
+                    </div>
+                    
+                    <div class="space-y-3 mb-4">
+                        <input type="date" id="date-zoo" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                        <select id="package-zoo" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                            <option value="Elephant Riding">Elephant Riding Experience</option>
+                            <option value="Breakfast with Orangutan">Breakfast with Orangutan</option>
+                        </select>
+                        <select id="guests-zoo" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3">3 Orang</option>
+                            <option value="4">4 Orang</option>
+                        </select>
+                        <textarea id="notes-zoo" placeholder="Catatan tambahan (opsional)" rows="2" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]"></textarea>
+                    </div>
+
+                    <button onclick="bookBaliZoo()" 
+                            class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        Booking via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Paket 9 - Tukad Cepung Waterfall -->
+            <div class="booking-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in">
+                <img src="../media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg" alt="Tukad Cepung" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#005f73] mb-2">Tukad Cepung Waterfall</h3>
+                    <div class="flex items-center text-sm text-gray-600 mb-3">
+                        <i class="fas fa-clock text-[#005f73] mr-2"></i>
+                        <span>Half Day Tour</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-2xl font-bold text-[#005f73]">Rp 400.000</span>
+                        <span class="text-sm text-gray-500">/paket</span>
+                    </div>
+                    
+                    <div class="space-y-3 mb-4">
+                        <input type="date" id="date-cepung" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                        <select id="guests-cepung" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]">
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3">3 Orang</option>
+                            <option value="4">4 Orang</option>
+                            <option value="5">5+ Orang</option>
+                        </select>
+                        <textarea id="notes-cepung" placeholder="Catatan tambahan (opsional)" rows="2" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73]"></textarea>
+                    </div>
+
+                    <button onclick="bookViaWhatsApp('Tukad Cepung Waterfall', 400000, 'date-cepung', 'guests-cepung', 'notes-cepung')" 
+                            class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        Booking via WhatsApp
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Informasi Tambahan -->
+        <div class="mt-12 bg-blue-50 rounded-2xl p-8 fade-in">
+            <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-[#005f73] mb-2">Informasi Penting</h3>
+                <p class="text-gray-600">Sebelum melakukan booking, harap perhatikan hal-hal berikut:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex items-start gap-3">
+                    <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-check text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-[#005f73] mb-1">Konfirmasi Cepat</h4>
+                        <p class="text-sm text-gray-600">Booking akan direspon maksimal 1x24 jam via WhatsApp</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                    <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-credit-card text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-[#005f73] mb-1">Pembayaran</h4>
+                        <p class="text-sm text-gray-600">DP 50% atau full payment via transfer bank</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                    <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-clock text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-[#005f73] mb-1">Jam Operasional</h4>
+                        <p class="text-sm text-gray-600">Senin - Minggu, 08.00 - 22.00 WITA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 text-center">
+                <p class="text-sm text-gray-500">
+                    <i class="fas fa-phone-alt text-[#005f73] mr-2"></i>
+                    Untuk bantuan langsung: <span class="font-semibold text-[#005f73]">+62 821-4409-4585</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+  <script>
+    // Simple mobile menu for temporary navbar
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function() {
+          alert('Mobile menu would open here. This is temporary navbar.');
+        });
+      }
+    });
+
+    // Nomor WhatsApp tujuan
+    const WA_NUMBER = '6282144094585'; // Format internasional tanpa +
+    
+    // Fungsi umum untuk booking via WhatsApp
+    function bookViaWhatsApp(packageName, price, dateId, guestsId, notesId) {
+        // Ambil nilai dari form
+        const date = document.getElementById(dateId).value;
+        const guests = document.getElementById(guestsId).value;
+        const notes = document.getElementById(notesId).value;
+        
+        // Validasi tanggal
+        if (!date) {
+            alert('Silakan pilih tanggal tour');
+            return;
+        }
+        
+        // Format pesan WhatsApp
+        let message = `Halo, saya ingin booking paket wisata:%0A%0A`;
+        message += `Paket: ${packageName}%0A`;
+        message += `Tanggal: ${date}%0A`;
+        message += `Jumlah Peserta: ${guests} orang%0A`;
+        message += `Harga: Rp ${price.toLocaleString('id-ID')}%0A`;
+        
+        if (notes) {
+            message += `Catatan: ${notes}%0A`;
+        }
+        
+        message += `%0ATerima kasih!`;
+        
+        // Redirect ke WhatsApp
+        window.open(`https://wa.me/${6282144094585}?text=${message}`, '_blank');
+    }
+    
+    // Fungsi khusus untuk Nusa Penida
+    function bookNusaPenida() {
+        const date = document.getElementById('date-penida').value;
+        const trip = document.getElementById('trip-penida').value;
+        const guests = document.getElementById('guests-penida').value;
+        const notes = document.getElementById('notes-penida').value;
+        
+        if (!date) {
+            alert('Silakan pilih tanggal tour');
+            return;
+        }
+        
+        let message = `Halo, saya ingin booking paket wisata:%0A%0A`;
+        message += `Paket: Nusa Penida Island Tour%0A`;
+        message += `Trip: ${trip}%0A`;
+        message += `Tanggal: ${date}%0A`;
+        message += `Jumlah Peserta: ${guests} orang%0A`;
+        message += `Harga: Rp 1.000.000%0A`;
+        
+        if (notes) {
+            message += `Catatan: ${notes}%0A`;
+        }
+        
+        message += `%0ATerima kasih!`;
+        
+        window.open(`https://wa.me/${6282144094585}?text=${message}`, '_blank');
+    }
+    
+    // Fungsi khusus untuk Fun Activities
+    function bookFunActivities() {
+        const date = document.getElementById('date-fun').value;
+        const activity = document.getElementById('activity-fun').value;
+        const guests = document.getElementById('guests-fun').value;
+        const notes = document.getElementById('notes-fun').value;
+        
+        if (!date) {
+            alert('Silakan pilih tanggal');
+            return;
+        }
+        
+        let message = `Halo, saya ingin booking aktivitas:%0A%0A`;
+        message += `Aktivitas: ${activity}%0A`;
+        message += `Tanggal: ${date}%0A`;
+        message += `Jumlah Peserta: ${guests} orang%0A`;
+        message += `Harga: Mulai Rp 300.000%0A`;
+        
+        if (notes) {
+            message += `Catatan: ${notes}%0A`;
+        }
+        
+        message += `%0ATerima kasih!`;
+        
+        window.open(`https://wa.me/${6282144094585}?text=${message}`, '_blank');
+    }
+    
+    // Fungsi khusus untuk Bali Zoo
+    function bookBaliZoo() {
+        const date = document.getElementById('date-zoo').value;
+        const package_zoo = document.getElementById('package-zoo').value;
+        const guests = document.getElementById('guests-zoo').value;
+        const notes = document.getElementById('notes-zoo').value;
+        
+        if (!date) {
+            alert('Silakan pilih tanggal');
+            return;
+        }
+        
+        let message = `Halo, saya ingin booking Bali Zoo Experience:%0A%0A`;
+        message += ` Package: ${package_zoo}%0A`;
+        message += ` Tanggal: ${date}%0A`;
+        message += ` Jumlah Peserta: ${guests} orang%0A`;
+        message += ` Harga: Rp 1.000.000%0A`;
+        
+        if (notes) {
+            message += `📝 Catatan: ${notes}%0A`;
+        }
+        
+        message += `%0ATerima kasih!`;
+        
+        window.open(`https://wa.me/${6282144094585}?text=${message}`, '_blank');
+    }
+
+    // Set minimal date ke hari ini untuk input date
+    document.addEventListener('DOMContentLoaded', function() {
+        const today = new Date().toISOString().split('T')[0];
+        const dateInputs = document.querySelectorAll('input[type="date"]');
+        dateInputs.forEach(input => {
+            input.min = today;
+        });
+    });
+</script>
+<style>
+        .booking-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .booking-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    button {
+        transition: all 0.3s ease;
+    }
+    button:hover {
+        transform: scale(1.02);
+    }
+    input, select, textarea {
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    input:focus, select:focus, textarea:focus {
+        box-shadow: 0 0 0 3px rgba(0, 95, 115, 0.1);
+    }
+</style>
+
+</body>
+</html>

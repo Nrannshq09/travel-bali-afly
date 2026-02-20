@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nusa Penida Island Tour - Afly Bali Tour</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="../assets/logo.jpeg">
+  
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    
+    .breadcrumb {
+      background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+    }
+    
+    .package-hero {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    }
+    
+    .price-card {
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      background: rgba(0, 95, 115, 0.1);
+      color: #005f73;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+<!-- ===== Hero Section ===== -->
+<section class="relative text-white py-12 min-h-[500px] flex items-center">
+  <!-- Background Image dengan Overlay -->
+  <div class="absolute inset-0 z-0">
+    <img src="../galery/Nusa Penida Island in the Lesser Sunda Islands, Indonesia.jfif" alt="Nusa Penida Background" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/50"></div> <!-- Overlay gelap agar teks terbaca -->
+  </div>
+  
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <!-- Konten Teks -->
+      <div class="fade-in">
+        <!-- Rating -->
+        <div class="flex items-center mb-4">
+          <div class="flex text-yellow-400 mr-3">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="text-lg">5.0 (245 Review)</span>
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          Nusa Penida Island Tour
+        </h1>
+        
+        <p class="text-xl mb-8 leading-relaxed">
+          Jelajahi keindahan eksotis Pulau Nusa Penida dengan pantai-pantai memukau dan tebing-tebing dramatis. Kunjungi spot-spot ikonik seperti Kelingking Beach, Broken Beach, Angel Billabong, dan Crystal Bay dalam satu hari penuh petualangan.
+        </p>
+        
+        <div class="flex flex-wrap gap-4">
+          <a href="#booking" class="bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition duration-300 flex items-center">
+            <i class="fas fa-calendar-check mr-2"></i>
+            Booking This Product
+          </a>
+          <a href="https://wa.me/6281234567890" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition duration-300 flex items-center">
+            <i class="fab fa-whatsapp mr-2"></i>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      
+      <!-- Bagian kanan bisa dikosongkan atau diisi konten lain jika diperlukan -->
+      <div class="fade-in hidden lg:block">
+        <!-- Bisa diisi dengan elemen dekoratif atau dikosongkan -->
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== Detail Paket ===== -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Konten Utama -->
+        <div class="lg:col-span-2">
+          <!-- Overview -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Overview</h2>
+            <div class="prose max-w-none text-gray-700">
+              <p class="text-lg mb-6">
+                Discover the raw natural beauty of Nusa Penida, a hidden gem located southeast of Bali. This full-day tour takes you to the island's most iconic landmarks, where you'll be greeted by turquoise waters, white sandy beaches, and dramatic limestone cliffs that will take your breath away.
+              </p>
+              
+              <p class="text-lg mb-6">
+                Choose between our West Trip to visit the famous Kelingking Beach (the "T-Rex"), Broken Beach, Angel Billabong, and Crystal Bay, or our East Trip to explore the stunning Diamond Beach, the iconic Tree House, and Atuh Beach. Both options include round-trip fast boat transfers and a delicious Indonesian lunch.
+              </p>
+            </div>
+          </div>
+
+          <!-- Trip Options -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Choose Your Trip</h2>
+            
+            <!-- West Trip -->
+            <div class="mb-8">
+              <h3 class="text-2xl font-bold text-[#005f73] mb-4 flex items-center">
+                <i class="fas fa-sun mr-3"></i>
+                West Nusa Penida Trip
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 p-6 rounded-2xl">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                      <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#005f73]">Kelingking Beach</h3>
+                  </div>
+                  <p class="text-gray-700">Iconic T-Rex shaped cliff with stunning views and secret beach below.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-2xl">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                      <i class="fas fa-water"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#005f73]">Broken Beach</h3>
+                  </div>
+                  <p class="text-gray-700">Natural archway forming a circular lagoon with crystal clear water.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-2xl">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                      <i class="fas fa-swimmer"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#005f73]">Angel Billabong</h3>
+                  </div>
+                  <p class="text-gray-700">Natural infinity pool with tidal water, perfect for photos.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-2xl">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                      <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#005f73]">Crystal Bay</h3>
+                  </div>
+                  <p class="text-gray-700">Beautiful beach with calm waters, ideal for swimming and snorkeling.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- East Trip -->
+            <div>
+              <h3 class="text-2xl font-bold text-[#005f73] mb-4 flex items-center">
+                <i class="fas fa-cloud-sun mr-3"></i>
+                East Nusa Penida Trip
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 p-6 rounded-2xl">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                      <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#005f73]">Diamond Beach</h3>
+                  </div>
+                  <p class="text-gray-700">Stunning white sand beach with crystal clear turquoise water.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-2xl">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                      <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#005f73]">Tree House</h3>
+                  </div>
+                  <p class="text-gray-700">Iconic Rumah Pohon with breathtaking views of the coastline.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-2xl">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                      <i class="fas fa-water"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#005f73]">Atuh Beach</h3>
+                  </div>
+                  <p class="text-gray-700">Beautiful beach surrounded by towering cliffs and unique rock formations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Itinerary -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Tour Itinerary</h2>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">1</div>
+                <div>
+                  <h3 class="font-bold text-lg">Pick Up from Hotel</h3>
+                  <p class="text-gray-600">06:00 AM - Pick up from your hotel in South Bali (Sanur, Kuta, Seminyak, Nusa Dua)</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">2</div>
+                <div>
+                  <h3 class="font-bold text-lg">Fast Boat to Nusa Penida</h3>
+                  <p class="text-gray-600">07:30 AM - Depart from Sanur harbor, approximately 45 minutes journey</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">3</div>
+                <div>
+                  <h3 class="font-bold text-lg">Island Exploration</h3>
+                  <p class="text-gray-600">08:30 AM - Start your chosen trip (West or East) with private car and driver</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">4</div>
+                <div>
+                  <h3 class="font-bold text-lg">Lunch Break</h3>
+                  <p class="text-gray-600">12:30 PM - Enjoy Indonesian lunch at a local restaurant</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">5</div>
+                <div>
+                  <h3 class="font-bold text-lg">Continue Exploration</h3>
+                  <p class="text-gray-600">01:30 PM - Visit remaining spots on your itinerary</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">6</div>
+                <div>
+                  <h3 class="font-bold text-lg">Return to Bali</h3>
+                  <p class="text-gray-600">04:00 PM - Take fast boat back to Sanur, arrive at your hotel around 6:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="rounded-xl overflow-hidden h-32">
+                <img src="../media/kelingking-beach.jpeg" alt="Kelingking Beach" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+              </div>
+              <div class="rounded-xl overflow-hidden h-32">
+                <img src="../media/broken-beach.jpeg" alt="Broken Beach" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+              </div>
+              <div class="rounded-xl overflow-hidden h-32">
+                <img src="../media/diamond-beach.jpeg" alt="Diamond Beach" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+              </div>
+            </div>
+          </div>
+
+          <!-- What's Included -->
+          <div class="fade-in">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">What's Included</h2>
+            <div class="bg-green-50 p-6 rounded-2xl mb-6">
+              <h3 class="text-xl font-bold text-green-800 mb-4">✅ Included in Package:</h3>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-green-700">
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Round-trip fast boat tickets
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Private car on Nusa Penida
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  English-speaking driver
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Indonesian lunch
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Mineral water
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Hotel pickup and drop-off (South Bali)
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-red-50 p-6 rounded-2xl">
+              <h3 class="text-xl font-bold text-red-800 mb-4">❌ Not Included:</h3>
+              <ul class="text-red-700">
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Entrance fees (approx. IDR 25,000 per spot)
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Snorkeling equipment
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Personal expenses
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar - Booking Card -->
+        <div class="lg:col-span-1">
+          <div id="booking" class="price-card bg-white rounded-2xl shadow-xl p-6 sticky top-32 fade-in">
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-bold text-[#005f73] mb-2">Nusa Penida Tour</h3>
+              <div class="flex items-center justify-center text-yellow-400 mb-4">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="text-gray-600 ml-2 text-sm">5.0 (245 Review)</span>
+              </div>
+            </div>
+            
+            <div class="bg-blue-50 p-4 rounded-xl mb-6">
+              <div class="text-center">
+                <span class="text-3xl font-bold text-[#005f73]">IDR 1.000.000</span>
+                <p class="text-gray-600 text-sm">Harga per orang</p>
+                <p class="text-xs text-gray-500 mt-1">≈ USD 63 /person</p>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <a href="../booking/booking.html?package=nusa-penida" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-4 rounded-xl font-bold text-lg hover:opacity-90 transition">
+                <i class="fas fa-calendar-check mr-2"></i>
+                Book Now
+              </a>
+              
+              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20paket%20Nusa%20Penida%20Island%20Tour" 
+                 class="block w-full bg-green-500 text-white text-center py-4 rounded-xl font-bold text-lg hover:bg-green-600 transition flex items-center justify-center">
+                <i class="fab fa-whatsapp mr-2"></i>
+                WhatsApp
+              </a>
+            </div>
+            
+            <div class="mt-6 pt-6 border-t border-gray-200">
+              <h4 class="font-bold text-[#005f73] mb-3">Package Details:</h4>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-center">
+                  <i class="fas fa-clock text-[#005f73] mr-3"></i>
+                  <span>Duration: Full Day (12 hours)</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-users text-[#005f73] mr-3"></i>
+                  <span>Group Size: Private tour</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-ship text-[#005f73] mr-3"></i>
+                  <span>Fast Boat: Round trip included</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-calendar text-[#005f73] mr-3"></i>
+                  <span>Available: Daily</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-utensils text-[#005f73] mr-3"></i>
+                  <span>Lunch Included</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="mt-4 text-xs text-gray-500 text-center">
+              *Choose West Trip or East Trip upon booking
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimoni Section ===== -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12 fade-in">
+        <h2 class="text-3xl font-bold text-[#005f73] mb-4">What Our Customers Say</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Lebih dari 1000 wisatawan telah menjelajahi Nusa Penida bersama kami
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-2xl shadow-lg fade-in">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-[#005f73] to-[#0077b6] rounded-full flex items-center justify-center text-white font-bold mr-4">
+              M
+            </div>
+            <div>
+              <h4 class="font-bold text-[#005f73]">Michael Tan</h4>
+              <div class="flex text-yellow-400 text-sm">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Kelingking Beach benar-benar luar biasa! Pemandangannya seperti surga. Driver kami sangat ramah dan membantu. Definitely worth it!"
+          </p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-2xl shadow-lg fade-in">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-[#005f73] to-[#0077b6] rounded-full flex items-center justify-center text-white font-bold mr-4">
+              S
+            </div>
+            <div>
+              <h4 class="font-bold text-[#005f73]">Sarah Williams</h4>
+              <div class="flex text-yellow-400 text-sm">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "We took the East trip to Diamond Beach and it was magical! The water is so clear and the views are breathtaking. Highly recommended!"
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA Section ===== -->
+  <section class="py-16 bg-gradient-to-br from-[#005f73] to-[#0077b6] text-white text-center">
+    <div class="container mx-auto px-4 fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Explore Nusa Penida?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">
+        Book your Nusa Penida Island Tour now and discover the hidden paradise of Bali!
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="../booking/booking.html?package=nusa-penida" class="bg-white text-[#005f73] px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition duration-300">
+          <i class="fas fa-calendar-check mr-2"></i> Book Now
+        </a>
+        <a href="https://wa.me/6281234567890" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-white/10 transition duration-300">
+          <i class="fab fa-whatsapp mr-2"></i> Konsultasi via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-[#005f73] text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
+              <span class="text-[#005f73] font-bold text-xl">A</span>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-white">Afly Bali Tour</h1>
+              <p class="text-xs text-gray-300 -mt-1">Explore Paradise</p>
+            </div>
+          </div>
+          <p class="text-gray-300 text-sm">
+            Penyedia paket wisata Bali terpercaya dengan pengalaman lebih dari 5 tahun melayani wisatawan domestik dan mancanegara.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Tautan Cepat</h3>
+          <ul class="space-y-2">
+            <li><a href="../index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+            <li><a href="../galeri/galeri.html" class="text-gray-300 hover:text-white transition">Galeri</a></li>
+            <li><a href="../paket/paket.html" class="text-gray-300 hover:text-white transition">Paket Wisata</a></li>
+            <li><a href="../booking/booking.html" class="text-gray-300 hover:text-white transition">Booking</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Kontak Kami</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-center">
+              <i class="fas fa-map-marker-alt mr-3 text-sm"></i>
+              <span>Denpasar, Bali, Indonesia</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3 text-sm"></i>
+              <span>aflybali@gmail.com</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone mr-3 text-sm"></i>
+              <span>+62 812-3456-7890</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Follow Kami</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300 text-sm">
+        <p>© 2025 Afly Bali Tour. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/navbar-loader.js"></script>
+  <script>
+    // Animasi fade in saat scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      
+      const fadeInOnScroll = function() {
+        fadeElements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+          
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+          }
+        });
+      };
+      
+      // Set initial state
+      fadeElements.forEach(element => {
+        element.style.opacity = "0";
+        element.style.transform = "translateY(30px)";
+        element.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+      });
+      
+      // Check on load and scroll
+      window.addEventListener('scroll', fadeInOnScroll);
+      fadeInOnScroll();
+    });
+  </script>
+</body>
+</html>

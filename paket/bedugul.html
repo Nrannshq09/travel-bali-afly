@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bedugul Tour - Afly Bali Tour</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="../assets/logo.jpeg">
+  
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    
+    .breadcrumb {
+      background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+    }
+    
+    .package-hero {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    }
+    
+    .price-card {
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      background: rgba(0, 95, 115, 0.1);
+      color: #005f73;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="package-hero text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <!-- Konten Teks -->
+        <div class="fade-in">
+          <!-- Rating -->
+          <div class="flex items-center mb-4">
+            <div class="flex text-yellow-400 mr-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="text-lg">4.8 (1.234 Reviews)</span>
+          </div>
+          
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            Bedugul Tour
+          </h1>
+          
+          <p class="text-xl mb-8 leading-relaxed">
+            Explore the beautiful mountain area with stunning lakes, strawberry gardens, and cool fresh air. Discover the calm and refreshing side of Bali through our Bedugul Tour. Nestled in the island's cool mountain region, Bedugul offers breathtaking views of Lake Beratan and the iconic Ulun Danu Temple, which appears to float peacefully on the water.
+            This journey takes you through scenic landscapes, lush gardens, and local fruit markets where you can experience the authentic charm of Bali's countryside. Enjoy the crisp mountain air and capture unforgettable moments surrounded by natural beauty and Balinese culture.
+            Perfect for travelers who seek tranquility, nature photography, and a touch of spiritual serenity away from Bali's coastal crowds.
+          </p>
+          
+          <div class="flex flex-wrap gap-4">
+            <a href="#booking" class="bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition duration-300 flex items-center">
+              <i class="fas fa-calendar-check mr-2"></i>
+              Booking This Product
+            </a>
+            <a href="https://wa.me/6281234567890" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition duration-300 flex items-center">
+              <i class="fab fa-whatsapp mr-2"></i>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Gambar Hero -->
+        <div class="fade-in">
+          <div class="rounded-2xl overflow-hidden shadow-2xl h-96 lg:h-[450px] relative">
+            <img src="../media/Ulun Danu Temple - Bali.jpeg" alt="Bedugul Tour" class="w-full h-full object-cover">
+            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+              <div class="flex items-center text-white mb-2">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Bedugul Area, Bali, Indonesia</span>
+              </div>
+              <h3 class="text-xl font-bold">Ulun Danu Temple & Lake Beratan</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Detail Paket ===== -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Konten Utama -->
+        <div class="lg:col-span-2">
+          <!-- Overview -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Overview</h2>
+            <div class="prose max-w-none text-gray-700">
+              <p class="text-lg mb-6">
+                Explore the beautiful mountain area with stunning lakes, strawberry gardens, and cool fresh air. Bedugul Tour offers the perfect blend of natural beauty and Balinese culture that will make your Bali vacation truly memorable.
+              </p>
+              
+              <p class="text-lg mb-6">
+                Whether you're traveling with family, friends, or as a couple, our Bedugul tour package is designed to bring tranquility, wonderful experiences, and unforgettable moments against the backdrop of Bali's stunning mountain region.
+              </p>
+            </div>
+          </div>
+
+          <!-- Activities Included -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Places to Visit</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-blue-50 p-6 rounded-2xl">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-temple"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Ulun Danu Temple</h3>
+                </div>
+                <p class="text-gray-700">Iconic temple that appears to float on Lake Beratan, one of Bali's most photographed landmarks.</p>
+              </div>
+              
+              <div class="bg-blue-50 p-6 rounded-2xl">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-leaf"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Strawberry Garden</h3>
+                </div>
+                <p class="text-gray-700">Visit local strawberry farms and pick fresh strawberries while enjoying the cool mountain air.</p>
+              </div>
+              
+              <div class="bg-blue-50 p-6 rounded-2xl">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-water"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Lake Beratan</h3>
+                </div>
+                <p class="text-gray-700">Beautiful crater lake surrounded by mountains, perfect for photography and relaxation.</p>
+              </div>
+              
+              <div class="bg-blue-50 p-6 rounded-2xl">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-shopping-bag"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Local Market</h3>
+                </div>
+                <p class="text-gray-700">Experience authentic Balinese market with fresh fruits, vegetables, and local souvenirs.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="rounded-xl overflow-hidden h-32">
+                <img src="../media/Ulun Danu Temple - Bali.jpeg" alt="Ulun Danu Temple" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+              </div>
+              <div class="rounded-xl overflow-hidden h-32">
+                <img src="../assets/bedugul.jpeg" alt="Lake Beratan" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+              </div>
+              <div class="rounded-xl overflow-hidden h-32">
+                <img src="../galery/tampak siring.jpeg" alt="Strawberry Garden" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+              </div>
+            </div>
+          </div>
+
+          <!-- What's Included -->
+          <div class="fade-in">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">What's Included</h2>
+            <div class="bg-green-50 p-6 rounded-2xl mb-6">
+              <h3 class="text-xl font-bold text-green-800 mb-4">✅ Included in Package:</h3>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-green-700">
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Private Car + Driver
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Fuel
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Parking
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Mineral water
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Professional driver guide
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Flexible itinerary
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-red-50 p-6 rounded-2xl">
+              <h3 class="text-xl font-bold text-red-800 mb-4">❌ Not Included:</h3>
+              <ul class="text-red-700">
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Entrance tickets
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Meals and beverages
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Personal expenses
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar - Booking Card -->
+        <div class="lg:col-span-1">
+          <div id="booking" class="price-card bg-white rounded-2xl shadow-xl p-6 sticky top-32 fade-in">
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-bold text-[#005f73] mb-2">Bedugul Tour</h3>
+              <div class="flex items-center justify-center text-yellow-400 mb-4">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="text-gray-600 ml-2 text-sm">4.8 (1.234 Reviews)</span>
+              </div>
+            </div>
+            
+            <div class="bg-blue-50 p-4 rounded-xl mb-6">
+              <div class="text-center">
+                <span class="text-3xl font-bold text-[#005f73]">IDR 700.000</span>
+                <p class="text-gray-600 text-sm">Per paket (1-5 orang) | USD 44</p>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <a href="../booking/booking.html?package=bedugul-tour" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-4 rounded-xl font-bold text-lg hover:opacity-90 transition">
+                <i class="fas fa-calendar-check mr-2"></i>
+                Book Now
+              </a>
+              
+              <a href="https://wa.me/6282144094585?text=Halo,%20saya%20ingin%20bertanya%20tentang%20paket%20Bedugul%20Tour" 
+                 class="block w-full bg-green-500 text-white text-center py-4 rounded-xl font-bold text-lg hover:bg-green-600 transition flex items-center justify-center">
+                <i class="fab fa-whatsapp mr-2"></i>
+                WhatsApp
+              </a>
+            </div>
+            
+            <div class="mt-6 pt-6 border-t border-gray-200">
+              <h4 class="font-bold text-[#005f73] mb-3">Package Details:</h4>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-center">
+                  <i class="fas fa-clock text-[#005f73] mr-3"></i>
+                  <span>Duration: 1 Day Tour (8-10 hours)</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-car text-[#005f73] mr-3"></i>
+                  <span>Private Car + Driver</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-map-marker-alt text-[#005f73] mr-3"></i>
+                  <span>Location: Bedugul Area</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-calendar text-[#005f73] mr-3"></i>
+                  <span>Available: Daily</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimoni Section ===== -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12 fade-in">
+        <h2 class="text-3xl font-bold text-[#005f73] mb-4">What Our Customers Say</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Pengalaman tak terlupakan bersama Afly Bali Tour
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-2xl shadow-lg fade-in">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-[#005f73] to-[#0077b6] rounded-full flex items-center justify-center text-white font-bold mr-4">
+              A
+            </div>
+            <div>
+              <h4 class="font-bold text-[#005f73]">Andi Wijaya</h4>
+              <div class="flex text-yellow-400 text-sm">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Bedugul Tour sangat menyenangkan! Pura Ulun Danu benar-benar indah, udaranya sejuk, dan driver kami sangat ramah dan profesional. Recomended banget!"
+          </p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-2xl shadow-lg fade-in">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-[#005f73] to-[#0077b6] rounded-full flex items-center justify-center text-white font-bold mr-4">
+              S
+            </div>
+            <div>
+              <h4 class="font-bold text-[#005f73]">Sarah Chen</h4>
+              <div class="flex text-yellow-400 text-sm">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Amazing experience! The strawberry garden was so fun and the views of Lake Beratan are breathtaking. Our driver was very knowledgeable about Bali's culture."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-[#005f73] text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
+              <span class="text-[#005f73] font-bold text-xl">A</span>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-white">Afly Bali Tour</h1>
+              <p class="text-xs text-gray-300 -mt-1">Explore Paradise</p>
+            </div>
+          </div>
+          <p class="text-gray-300 text-sm">
+            Penyedia paket wisata Bali terpercaya dengan pengalaman lebih dari 5 tahun melayani wisatawan domestik dan mancanegara.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Tautan Cepat</h3>
+          <ul class="space-y-2">
+            <li><a href="../index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+            <li><a href="../galeri/galeri.html" class="text-gray-300 hover:text-white transition">Galeri</a></li>
+            <li><a href="../paket/paket.html" class="text-gray-300 hover:text-white transition">Paket Wisata</a></li>
+            <li><a href="../booking/booking.html" class="text-gray-300 hover:text-white transition">Booking</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Kontak Kami</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-center">
+              <i class="fas fa-map-marker-alt mr-3 text-sm"></i>
+              <span>Denpasar, Bali, Indonesia</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3 text-sm"></i>
+              <span>aflybali@gmail.com</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone mr-3 text-sm"></i>
+              <span>+62 812-3456-7890</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Follow Kami</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300 text-sm">
+        <p>© 2025 Afly Bali Tour. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/navbar-loader.js"></script>
+  <script>
+    // Animasi fade in saat scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      
+      const fadeInOnScroll = function() {
+        fadeElements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+          
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+          }
+        });
+      };
+      
+      // Set initial state
+      fadeElements.forEach(element => {
+        element.style.opacity = "0";
+        element.style.transform = "translateY(30px)";
+        element.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+      });
+      
+      // Check on load and scroll
+      window.addEventListener('scroll', fadeInOnScroll);
+      fadeInOnScroll();
+    });
+  </script>
+</body>
+</html>

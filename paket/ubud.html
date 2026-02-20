@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubud & Tanah Lot Tour - Afly Bali Tour</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="../assets/logo.jpeg">
+  
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    
+    .breadcrumb {
+      background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+    }
+    
+    .price-card {
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      background: rgba(0, 95, 115, 0.1);
+      color: #005f73;
+    }
+
+    /* Optimasi rendering gambar */
+    .hero-image {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      -ms-interpolation-mode: bicubic;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- ===== Hero Section dengan Background Gambar ===== -->
+  <section class="relative text-white py-12 min-h-[600px] flex items-center">
+    <!-- Background Image HD dengan Overlay -->
+    <div class="absolute inset-0 z-0">
+      <picture>
+        <!-- WebP untuk browser modern -->
+        <source 
+          srcset="
+            ../media/Tanah Lot Temple (1).jpeg 480w,
+            ../media/Tanah Lot Temple (1).jpeg 768w,
+            ../media/Tanah Lot Temple (1).jpeg 1080w,
+            ../media/Tanah Lot Temple (1).jpeg 1920w
+          "
+          sizes="100vw"
+          type="image/webp"
+        >
+        <!-- JPG fallback -->
+        <source 
+          srcset="
+            ../media/Tanah Lot Temple (1).jpeg 480w,
+            ../media/Tanah Lot Temple (1).jpeg 768w,
+            ../media/Tanah Lot Temple (1).jpeg 1080w,
+            ../media/Tanah Lot Temple (1).jpeg 1920w
+          "
+          sizes="100vw"
+          type="image/jpeg"
+        >
+        <!-- Gambar default HD -->
+        <img 
+          src="../media/Tanah Lot Temple (1).jpeg" 
+          alt="Ubud & Tanah Lot Background" 
+          class="w-full h-full object-cover hero-image"
+          loading="eager"
+          fetchpriority="high"
+        >
+      </picture>
+      <div class="absolute inset-0 bg-black/50"></div> <!-- Overlay gelap agar teks terbaca -->
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <!-- Konten Teks -->
+        <div class="fade-in">
+          <!-- Rating -->
+          <div class="flex items-center mb-4">
+            <div class="flex text-yellow-400 mr-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="text-lg">4.5 (312 Review)</span>
+          </div>
+          
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            Ubud & Tanah Lot Tour
+          </h1>
+          
+          <p class="text-xl mb-8 leading-relaxed">
+            Rasakan pengalaman budaya yang autentik di Ubud dan saksikan keindahan matahari terbenam yang memukau di Pura Tanah Lot. Kunjungi Monkey Forest, Tegallalang Rice Terrace, Tegenungan Waterfall, dan nikmati sensasi Bali Swing dalam satu hari penuh petualangan.
+          </p>
+          
+          <div class="flex flex-wrap gap-4">
+            <a href="#booking" class="bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition duration-300 flex items-center">
+              <i class="fas fa-calendar-check mr-2"></i>
+              Booking This Product
+            </a>
+            <a href="https://wa.me/6281234567890" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition duration-300 flex items-center">
+              <i class="fab fa-whatsapp mr-2"></i>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Gambar Hero -->
+        <div class="fade-in">
+          <div class="rounded-2xl overflow-hidden shadow-2xl h-96 lg:h-[450px] relative border-4 border-white/20">
+            <picture>
+              <source srcset="../media/Tanah Lot Temple (1).jpeg" type="image/webp">
+              <img 
+                src="../media/Tanah Lot Temple (1).jpeg" 
+                alt="Ubud & Tanah Lot Temple" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              >
+            </picture>
+            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+              <div class="flex items-center text-white mb-2">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Ubud & Tanah Lot, Bali, Indonesia</span>
+              </div>
+              <h3 class="text-xl font-bold">Cultural Experience & Sunset Temple</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Detail Paket ===== -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Konten Utama -->
+        <div class="lg:col-span-2">
+          <!-- Overview -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Overview</h2>
+            <div class="prose max-w-none text-gray-700">
+              <p class="text-lg mb-6">
+                Discover the cultural heart of Bali on this full-day tour to Ubud and Tanah Lot. Experience the island's rich traditions, stunning landscapes, and spiritual heritage as you visit iconic landmarks and immerse yourself in local culture.
+              </p>
+              
+              <p class="text-lg mb-6">
+                From the playful monkeys at the Sacred Monkey Forest to the breathtaking rice terraces of Tegallalang, and ending with a magical sunset at the legendary Tanah Lot Temple, this tour offers the perfect introduction to Bali's diverse beauty.
+              </p>
+            </div>
+          </div>
+
+          <!-- Destinations -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Tour Destinations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-blue-50 p-6 rounded-2xl">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-tree"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Monkey Forest</h3>
+                </div>
+                <p class="text-gray-700">Sacred forest sanctuary home to hundreds of playful long-tailed macaques and ancient temples.</p>
+              </div>
+              
+              <div class="bg-blue-50 p-6 rounded-2xl">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-mountain"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Tegallalang Rice Terrace</h3>
+                </div>
+                <p class="text-gray-700">Iconic UNESCO World Heritage site with stunning terraced rice paddies and traditional irrigation system.</p>
+              </div>
+              
+              <div class="bg-blue-50 p-6 rounded-2xl">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-child"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Bali Swing</h3>
+                </div>
+                <p class="text-gray-700">Experience the thrill of swinging over the jungle valley with breathtaking views and photo opportunities.</p>
+              </div>
+              
+              <div class="bg-blue-50 p-6 rounded-2xl">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-water"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Tegenungan Waterfall</h3>
+                </div>
+                <p class="text-gray-700">Beautiful waterfall surrounded by lush greenery, perfect for swimming and photo sessions.</p>
+              </div>
+              
+              <div class="bg-blue-50 p-6 rounded-2xl md:col-span-2">
+                <div class="flex items-center mb-4">
+                  <div class="w-12 h-12 bg-[#005f73] rounded-full flex items-center justify-center text-white mr-4">
+                    <i class="fas fa-landmark"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-[#005f73]">Tanah Lot Temple</h3>
+                </div>
+                <p class="text-gray-700">Iconic sea temple perched on a rock formation, offering spectacular sunset views and spiritual atmosphere.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Itinerary -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Tour Itinerary</h2>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">1</div>
+                <div>
+                  <h3 class="font-bold text-lg">Pick Up from Hotel</h3>
+                  <p class="text-gray-600">08:00 AM - Our driver will pick you up from your hotel in South Bali area</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">2</div>
+                <div>
+                  <h3 class="font-bold text-lg">Monkey Forest</h3>
+                  <p class="text-gray-600">09:30 AM - Explore the sacred forest and interact with friendly monkeys</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">3</div>
+                <div>
+                  <h3 class="font-bold text-lg">Tegallalang Rice Terrace & Bali Swing</h3>
+                  <p class="text-gray-600">11:00 AM - Enjoy the stunning rice terraces and optional Bali Swing experience</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">4</div>
+                <div>
+                  <h3 class="font-bold text-lg">Lunch Break</h3>
+                  <p class="text-gray-600">12:30 PM - Enjoy Indonesian lunch at a local restaurant with rice terrace view</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">5</div>
+                <div>
+                  <h3 class="font-bold text-lg">Tegenungan Waterfall</h3>
+                  <p class="text-gray-600">02:00 PM - Swim and take photos at the beautiful waterfall</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">6</div>
+                <div>
+                  <h3 class="font-bold text-lg">Tanah Lot Temple</h3>
+                  <p class="text-gray-600">04:30 PM - Witness the spectacular sunset at the iconic sea temple</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-[#005f73] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 mt-1">7</div>
+                <div>
+                  <h3 class="font-bold text-lg">Return to Hotel</h3>
+                  <p class="text-gray-600">07:00 PM - Arrive back at your hotel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery -->
+          <div class="fade-in mb-12">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="rounded-xl overflow-hidden h-32">
+                <img src="../media/monkey-forest.jpeg" alt="Monkey Forest" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+              </div>
+              <div class="rounded-xl overflow-hidden h-32">
+                <img src="../media/tegallalang.jpeg" alt="Tegallalang Rice Terrace" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+              </div>
+              <div class="rounded-xl overflow-hidden h-32">
+                <img src="../media/tanah-lot-sunset.jpeg" alt="Tanah Lot Sunset" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+              </div>
+            </div>
+          </div>
+
+          <!-- What's Included -->
+          <div class="fade-in">
+            <h2 class="text-3xl font-bold text-[#005f73] mb-6">What's Included</h2>
+            <div class="bg-green-50 p-6 rounded-2xl mb-6">
+              <h3 class="text-xl font-bold text-green-800 mb-4">✅ Included in Package:</h3>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-green-700">
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Private car with AC
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Professional English-speaking driver
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Fuel and parking fees
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Mineral water
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Hotel pickup and drop-off
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  Flexible itinerary
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-red-50 p-6 rounded-2xl">
+              <h3 class="text-xl font-bold text-red-800 mb-4">❌ Not Included:</h3>
+              <ul class="text-red-700">
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Entrance tickets (approx. IDR 50,000 per destination)
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Bali Swing ticket (optional, IDR 200,000)
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Meals and beverages
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-times-circle mr-2"></i>
+                  Personal expenses
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar - Booking Card -->
+        <div class="lg:col-span-1">
+          <div id="booking" class="price-card bg-white rounded-2xl shadow-xl p-6 sticky top-32 fade-in">
+            <div class="text-center mb-6">
+              <h3 class="text-2xl font-bold text-[#005f73] mb-2">Ubud & Tanah Lot Tour</h3>
+              <div class="flex items-center justify-center text-yellow-400 mb-4">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="text-gray-600 ml-2 text-sm">4.5 (312 Review)</span>
+              </div>
+            </div>
+            
+            <div class="bg-blue-50 p-4 rounded-xl mb-6">
+              <div class="text-center">
+                <span class="text-3xl font-bold text-[#005f73]">IDR 600.000</span>
+                <p class="text-gray-600 text-sm">Harga per mobil (maks. 6 orang)</p>
+                <p class="text-xs text-gray-500 mt-1">≈ USD 38 /car</p>
+              </div>
+            </div>
+            
+            <div class="space-y-4">
+              <a href="../booking/booking.html?package=ubud-tanah-lot" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-4 rounded-xl font-bold text-lg hover:opacity-90 transition">
+                <i class="fas fa-calendar-check mr-2"></i>
+                Book Now
+              </a>
+              
+              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20paket%20Ubud%20%26%20Tanah%20Lot" 
+                 class="block w-full bg-green-500 text-white text-center py-4 rounded-xl font-bold text-lg hover:bg-green-600 transition flex items-center justify-center">
+                <i class="fab fa-whatsapp mr-2"></i>
+                WhatsApp
+              </a>
+            </div>
+            
+            <div class="mt-6 pt-6 border-t border-gray-200">
+              <h4 class="font-bold text-[#005f73] mb-3">Package Details:</h4>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li class="flex items-center">
+                  <i class="fas fa-clock text-[#005f73] mr-3"></i>
+                  <span>Duration: Full Day (8 AM - 7 PM)</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-users text-[#005f73] mr-3"></i>
+                  <span>Max Capacity: 6 people per car</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-map-marker-alt text-[#005f73] mr-3"></i>
+                  <span>Location: Ubud & West Bali</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-calendar text-[#005f73] mr-3"></i>
+                  <span>Available: Daily</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-car text-[#005f73] mr-3"></i>
+                  <span>Private Car + Driver</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="mt-4 text-xs text-gray-500 text-center">
+              *Entrance tickets and Bali Swing not included
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimoni Section ===== -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12 fade-in">
+        <h2 class="text-3xl font-bold text-[#005f73] mb-4">What Our Customers Say</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Lebih dari 800 wisatawan telah menikmati keindahan Ubud dan Tanah Lot bersama kami
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-2xl shadow-lg fade-in">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-[#005f73] to-[#0077b6] rounded-full flex items-center justify-center text-white font-bold mr-4">
+              D
+            </div>
+            <div>
+              <h4 class="font-bold text-[#005f73]">David Pratama</h4>
+              <div class="flex text-yellow-400 text-sm">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Pengalaman yang luar biasa! Tegallalang Rice Terrace benar-benar indah, dan sunset di Tanah Lot tidak terlupakan. Driver kami sangat ramah dan informatif."
+          </p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-2xl shadow-lg fade-in">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-[#005f73] to-[#0077b6] rounded-full flex items-center justify-center text-white font-bold mr-4">
+              J
+            </div>
+            <div>
+              <h4 class="font-bold text-[#005f73]">Jennifer Lee</h4>
+              <div class="flex text-yellow-400 text-sm">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "The Bali Swing was amazing! Such a fun experience with breathtaking views. Tanah Lot at sunset is magical. Highly recommend this tour!"
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA Section ===== -->
+  <section class="py-16 bg-gradient-to-br from-[#005f73] to-[#0077b6] text-white text-center">
+    <div class="container mx-auto px-4 fade-in">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Explore Ubud & Tanah Lot?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">
+        Book your Ubud & Tanah Lot tour now and experience the best of Bali's culture and natural beauty!
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="../booking/booking.html?package=ubud-tanah-lot" class="bg-white text-[#005f73] px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition duration-300">
+          <i class="fas fa-calendar-check mr-2"></i> Book Now
+        </a>
+        <a href="https://wa.me/6281234567890" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-white/10 transition duration-300">
+          <i class="fab fa-whatsapp mr-2"></i> Konsultasi via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-[#005f73] text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
+              <span class="text-[#005f73] font-bold text-xl">A</span>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-white">Afly Bali Tour</h1>
+              <p class="text-xs text-gray-300 -mt-1">Explore Paradise</p>
+            </div>
+          </div>
+          <p class="text-gray-300 text-sm">
+            Penyedia paket wisata Bali terpercaya dengan pengalaman lebih dari 5 tahun melayani wisatawan domestik dan mancanegara.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Tautan Cepat</h3>
+          <ul class="space-y-2">
+            <li><a href="../index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+            <li><a href="../galeri/galeri.html" class="text-gray-300 hover:text-white transition">Galeri</a></li>
+            <li><a href="../paket/paket.html" class="text-gray-300 hover:text-white transition">Paket Wisata</a></li>
+            <li><a href="../booking/booking.html" class="text-gray-300 hover:text-white transition">Booking</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Kontak Kami</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-center">
+              <i class="fas fa-map-marker-alt mr-3 text-sm"></i>
+              <span>Denpasar, Bali, Indonesia</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3 text-sm"></i>
+              <span>aflybali@gmail.com</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone mr-3 text-sm"></i>
+              <span>+62 812-3456-7890</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Follow Kami</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300 text-sm">
+        <p>© 2025 Afly Bali Tour. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/navbar-loader.js"></script>
+  <script>
+    // Animasi fade in saat scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      
+      const fadeInOnScroll = function() {
+        fadeElements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+          
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+          }
+        });
+      };
+      
+      // Set initial state
+      fadeElements.forEach(element => {
+        element.style.opacity = "0";
+        element.style.transform = "translateY(30px)";
+        element.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+      });
+      
+      // Check on load and scroll
+      window.addEventListener('scroll', fadeInOnScroll);
+      fadeInOnScroll();
+    });
+
+    // Cek resolusi gambar hero
+    window.addEventListener('load', function() {
+      const heroImage = document.querySelector('.absolute.inset-0.z-0 img');
+      if (heroImage) {
+        console.log('Hero Image Resolution:', heroImage.naturalWidth, 'x', heroImage.naturalHeight);
+        if (heroImage.naturalWidth < 1920) {
+          console.log('⚠️ Gunakan gambar dengan resolusi minimal 1920x1080 untuk hasil terbaik');
+        }
+      }
+    });
+  </script>
+</body>
+</html>

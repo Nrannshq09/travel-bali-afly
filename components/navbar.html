@@ -1,0 +1,84 @@
+<!-- components/navbar.html -->
+<nav class="bg-white/95 backdrop-blur-md shadow-lg fixed w-full z-50 transition-all duration-300">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <a href="[[BASE_PATH]]index.html" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#005f73] to-[#0077b6] rounded-xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
+                    <span class="text-white font-bold text-xl">A</span>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-[#005f73] to-[#0077b6] bg-clip-text text-transparent">Afly Bali Tour</h1>
+                    <p class="text-xs text-gray-500 -mt-1">Explore Paradise</p>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-2">
+                <li>
+                    <a href="[[BASE_PATH]]index.html" class="px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium nav-home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="[[BASE_PATH]]galeri/galeri.html" class="px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium nav-galeri">
+                        Galeri
+                    </a>
+                </li>
+                <li>
+                    <a href="[[BASE_PATH]]#paket" class="px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium nav-paket">
+                        Paket Wisata
+                    </a>
+                </li>
+                <li>
+                    <a href="[[BASE_PATH]]booking/booking.html" class="bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white px-6 py-2.5 rounded-full font-semibold text-base shadow-lg hover:scale-105 transform transition duration-300">
+                        Booking Now
+                    </a>
+                </li>
+                <li>
+                    <a href="[[BASE_PATH]]index.html#kontak" class="px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium nav-kontak">
+                        Kontak
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                <svg class="w-6 h-6 text-[#005f73]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg fixed top-16 left-0 w-full z-40">
+    <ul class="flex flex-col space-y-1 p-4">
+        <li>
+            <a href="[[BASE_PATH]]index.html" class="block px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium nav-home">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="[[BASE_PATH]]galeri/galeri.html" class="block px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium nav-galeri">
+                Galeri
+            </a>
+        </li>
+        <li>
+            <a href="[[BASE_PATH]]#paket" class="block px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium nav-paket">
+                Paket Wisata
+            </a>
+        </li>
+        <li>
+            <a href="[[BASE_PATH]]booking/booking.html" class="block bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white px-6 py-2.5 rounded-full font-semibold text-base shadow-lg hover:scale-105 transform transition duration-300 text-center">
+                Booking Now
+            </a>
+        </li>
+        <li>
+            <a href="[[BASE_PATH]]index.html#kontak" class="block px-4 py-2 text-gray-700 hover:text-[#005f73] hover:bg-[#f0f8ff] rounded-lg transition-all duration-300 font-medium nav-kontak">
+                Kontak
+            </a>
+        </li>
+    </ul>
+</div>

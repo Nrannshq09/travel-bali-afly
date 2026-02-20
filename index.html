@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paket Wisata - Afly Bali Tour</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="assets/logo.jpeg">
+  
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    
+    .package-card {
+      transition: all 0.3s ease;
+    }
+    
+    .package-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .popular-badge {
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      background: linear-gradient(to right, #ff8a00, #ff2070);
+      color: white;
+      padding: 6px 15px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      background: rgba(0, 95, 115, 0.1);
+      color: #005f73;
+    }
+    
+    
+    
+    .package-hidden {
+      display: none;
+    }
+    
+    .hero-gradient {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    }
+    
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/10\ Things\ To\ Do\ In\ Uluwatu\ -\ alikainwanderlust_com.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body class="bg-[#f0f8ff] text-gray-800 font-sans scroll-smooth">
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="pt-32 pb-20 hero-gradient text-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <!-- Konten Teks -->
+        <div class="fade-in">
+          <div class="mb-6">
+            <span class="bg-yellow-500 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold">Featured Package
+            </span>
+          </div>
+          
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            A Full Day Exploring the Beauty of Bali: Nusa Dua Uluwatu & Kecak Dance
+          </h1>
+          
+          <div class="mb-6 space-y-4">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mt-1 mr-3">
+                <i class="fas fa-check-circle text-yellow-400"></i>
+              </div>
+              <p class="text-lg">
+                On this trip, you’ll be invited to witness the breathtaking panorama of Nusa Dua Uluwatu’s cliffs and a spectacular sunset
+              </p>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mt-1 mr-3">
+                <i class="fas fa-check-circle text-yellow-400"></i>
+              </div>
+              <p class="text-lg">
+                Witness the mesmerizing Kecak Dance performance at Nusa Dua Uluwatu Temple, set against the backdrop of a stunning sunset
+              </p>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex-shrink-0 mt-1 mr-3">
+                <i class="fas fa-check-circle text-yellow-400"></i>
+              </div>
+              <p class="text-lg">
+                Perfect for those who seek a cultural getaway, aesthetic photo spots, and an unforgettable experience
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-8">
+            <div>
+              <p class="text-gray-300 text-sm mb-1">Starting From</p>
+              <div class="flex items-baseline">
+                <span class="text-4xl font-bold">IDR 500.000</span>
+                <span class="text-lg text-gray-300 ml-2 ">USD 31</span>
+              </div>
+            </div>
+            
+            <div class="flex items-center text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span class="text-white ml-2">(4.9/5 from 156 reviews)</span>
+            </div>
+          </div>
+          
+          <div class="flex flex-wrap gap-4">
+            <a href="booking/booking.html" class="bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition duration-300 flex items-center">
+              <i class="fas fa-calendar-check mr-2"></i>
+              Book Now
+            </a>
+            <a href="paket/paket.html" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition duration-300 flex items-center">
+              <i class="fas fa-info-circle mr-2"></i>
+              View Details
+            </a>
+          </div>
+        </div>
+        
+        <!-- Gambar -->
+        <div class="fade-in">
+          <div class="hero-image rounded-2xl overflow-hidden shadow-2xl h-96 lg:h-[500px] relative">
+            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+              <div class="flex items-center text-white mb-2">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Uluwatu, Bali, Indonesia</span>
+              </div>
+              <h3 class="text-xl font-bold">Kecak Dance at Uluwatu Temple – The Magical Art of Bali</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Galeri ===== -->
+  <section id="galeri" class="py-20 bg-[#fff8d6]/50">
+    <div class="container mx-auto px-4 fade-in">
+      <!-- Header Section -->
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-[#005f73] mb-4">Destination Gallery</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto">
+          Discover the breathtaking beauty of Bali through our Travel Gallery. 
+          From golden beaches and lush rice terraces to vibrant cultural festivals, every photo tells a story waiting to be experienced. 
+          Let the stunning views inspire your next unforgettable adventure in paradise.
+        </p>
+      </div>
+
+      <!-- Grid Layout: Card Besar + Card Kecil -->
+      <div class="grid lg:grid-cols-5 gap-6">
+        
+        <!-- Card Utama Besar (Kiri) - Mengambil 2 kolom -->
+        <a href="galeri/galeri.html" class="lg:col-span-2 block bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 rounded-2xl shadow-xl overflow-hidden relative h-[500px] group cursor-pointer">
+          <img src="assets/bali fun.jpeg" alt="Bali Fun" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+          
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          
+          <div class="absolute top-6 left-6">
+            <span class="bg-rose-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Other Destination</span>
+          </div>
+          
+          <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+            <h3 class="text-2xl font-bold mb-2">Bali fun Activities></h3>
+            <div class="flex items-center mb-3">
+              <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-sm">Bali, Indonesia</span>
+            </div>
+            <p class="text-gray-200 text-sm mb-3 leading-relaxed line-clamp-3">
+              Get ready for an unforgettable splash of excitement in paradise! Experience the thrill of white-water rafting through Bali’s scenic rivers, soar high with parasailing and enjoy the island’s breathtaking coastline from above. 
+              Speed across the turquoise sea on a Jet Ski, or share laughter with friends on the exciting Banana Boat ride. Whether you crave adventure or just pure fun under the sun, Bali Fun Activities promises the perfect mix of adrenaline and tropical bliss!
+            </p>
+            <span class="inline-block bg-white text-purple-900 px-5 py-2 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors">
+              Baca Lebih Lanjut →
+            </span>
+          </div>
+        </a>
+
+        <!-- Grid Card Kecil (Kanan) - Mengambil 3 kolom -->
+        <div class="lg:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-4">
+          
+          <!-- Card 1 -->
+          <a href="galeri/galeri.html" class="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer">
+            <div class="h-36 overflow-hidden">
+              <img src="assets/nusa dua.jpeg" alt="Federation of Sport Climbing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-4">
+              <h4 class="font-bold text-sm text-[#005f73] mb-2 line-clamp-2">Luxury and Tranquility at Nusa Dua..</h4>
+              <div class="flex items-center text-xs text-gray-600">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Bali, Indonesia</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 2 -->
+          <a href="galeri/galeri.html" class="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer">
+            <div class="h-36 overflow-hidden">
+              <img src="assets/zoo.jpeg" alt="Semarapura Festival" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-4">
+              <h4 class="font-bold text-sm text-[#005f73] mb-2 line-clamp-2">Get Closer to Nature at Bali Zoo..</h4>
+              <div class="flex items-center text-xs text-gray-600">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Bali, Indonesia</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 6 -->
+          <a href="galeri/galeri.html" class="block bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer">
+            <div class="h-40 overflow-hidden">
+              <img src="assets/Diamond Beach Nusa Penida _ Roby Bali Day Tour and Transport.jpeg" alt="Cultural Festival" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-4">
+              <h4 class="font-bold text-sm text-[#005f73] mb-2 line-clamp-2">Cultural Festival Bali</h4>
+              <div class="flex items-center text-xs text-gray-600">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Bali, Indonesia</span>
+              </div>
+            </div>
+          </a>
+
+
+          <!-- Card 3 -->
+          <a href="galeri/galeri.html" class="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer">
+            <div class="h-36 overflow-hidden">
+              <img src="assets/bedugul.jpeg" alt="Event on April 2025" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-4">
+              <h4 class="font-bold text-sm text-[#005f73] mb-2 line-clamp-2">Discover the Serenity of Bedugul..</h4>
+              <div class="flex items-center text-xs text-gray-600">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Bali, Indonesia</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 4 -->
+          <a href="galeri/galeri.html" class="block bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer">
+            <div class="h-40 overflow-hidden">
+              <img src="assets/uluwatu.jpeg" alt="Acara pada Maret 2025" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-4">
+              <h4 class="font-bold text-sm text-[#005f73] mb-2 line-clamp-2">Clifftop Paradise of Uluwatu..</h4>
+              <div class="flex items-center text-xs text-gray-600">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Bali, Indonesia</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 5 -->
+          <a href="galeri/galeri.html" class="block bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer">
+            <div class="h-40 overflow-hidden">
+              <img src="assets/tirta gangga.jpeg" alt="Festival Event" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-4">
+              <h4 class="font-bold text-sm text-[#005f73] mb-2 line-clamp-2">Bali's Hidden Gem of Tranquility – Tirta Gangga..</h4>
+              <div class="flex items-center text-xs text-gray-600">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Bali, Indonesia</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Paket Wisata Section ===== -->
+<section id="paket" class="py-16 bg-[#f8fafc]">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12 fade-in">
+      <h2 class="text-3xl font-bold text-[#005f73] mb-4">Tour Package Options</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Discover the perfect travel package tailored to your needs and budget, designed to give you the best Bali experience without compromise.
+      </p>
+    </div>
+    
+    <!-- Filter Kategori -->
+    <div class="flex flex-wrap justify-center gap-4 mb-10">
+      <button class="filter-btn px-4 py-2 bg-[#005f73] text-white rounded-full font-medium" data-filter="all">All</button>
+      <button class="filter-btn px-4 py-2 bg-white text-[#005f73] border border-[#005f73] rounded-full font-medium hover:bg-[#005f73] hover:text-white transition" data-filter="nature">Nature</button>
+      <button class="filter-btn px-4 py-2 bg-white text-[#005f73] border border-[#005f73] rounded-full font-medium hover:bg-[#005f73] hover:text-white transition" data-filter="culture">Culture</button>
+      <button class="filter-btn px-4 py-2 bg-white text-[#005f73] border border-[#005f73] rounded-full font-medium hover:bg-[#005f73] hover:text-white transition" data-filter="adventure">Adventure</button>
+      <button class="filter-btn px-4 py-2 bg-white text-[#005f73] border border-[#005f73] rounded-full font-medium hover:bg-[#005f73] hover:text-white transition" data-filter="island">Island</button>
+    </div>
+    
+    <!-- Paket Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Paket 1 - Bedugul -->
+      <div class="package-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in" data-category="nature">
+        <div class="relative">
+          <img src="media/Ulun Danu Temple - Bali.jpeg" alt="Bedugul Tour" class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[#005f73] mb-4">Bedugul Tour</h3>
+          <p class="text-gray-600 mb-4">Explore the beautiful mountain area with stunning lakes, strawberry gardens, and cool fresh air.</p>
+          
+          <div class="mb-4">
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-clock text-[#005f73] mr-2"></i>
+              <span>1 Day Tour</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-car text-[#005f73] mr-2"></i>
+              <span>Private Car + Driver</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <i class="fas fa-map-marker-alt text-[#005f73] mr-2"></i>
+              <span>Bedugul Area</span>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded-lg mb-4">
+            <h4 class="font-semibold text-[#005f73] text-sm mb-2">Price Includes:</h4>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li>• Car + Driver</li>
+              <li>• Fuel</li>
+              <li>• Parking</li>
+            </ul>
+            <p class="text-xs text-red-600 mt-2">Excludes: Entrance tickets</p>
+          </div>
+          
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <span class="text-2xl font-bold text-[#005f73]">Rp 700.000</span>
+              <span class="text-sm text-gray-500">USD 44</span>
+            </div>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          
+          <a href="paket/bedugul.html" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            Show Details
+          </a>
+        </div>
+      </div>
+      
+      <!-- Paket 2 - Heaven Gate & Tirta Gangga -->
+      <div class="package-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in" data-category="culture">
+        <div class="relative">
+          <img src="media/Tirta gangga koi fish.jpeg" alt="Heaven Gate & Tirta Gangga" class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[#005f73] mb-4">Heaven Gate & Tirta Gangga</h3>
+          <p class="text-gray-600 mb-4">Visit the iconic Heaven Gate and the beautiful water palace of Tirta Gangga.</p>
+          
+          <div class="mb-4">
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-clock text-[#005f73] mr-2"></i>
+              <span>1 Day Tour</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-car text-[#005f73] mr-2"></i>
+              <span>Private Car + Driver</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <i class="fas fa-map-marker-alt text-[#005f73] mr-2"></i>
+              <span>East Bali</span>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded-lg mb-4">
+            <h4 class="font-semibold text-[#005f73] text-sm mb-2">Price Includes:</h4>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li>• Car + Driver</li>
+              <li>• Fuel</li>
+              <li>• Parking</li>
+            </ul>
+            <p class="text-xs text-red-600 mt-2">Excludes: Entrance tickets</p>
+          </div>
+          
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <span class="text-2xl font-bold text-[#005f73]">Rp 700.000</span>
+              <span class="text-sm text-gray-500">USD 44</span>
+            </div>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          
+          <a href="paket/tirtagangga.html" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            Show Details
+          </a>
+        </div>
+      </div>
+      
+      <!-- Paket 3 - Lovina & Git Git Waterfall -->
+      <div class="package-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in" data-category="nature">
+        <div class="relative">
+          <img src="media/water.jpeg" alt="Lovina & Git Git Waterfall" class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[#005f73] mb-4">Lovina & Git Git Waterfall</h3>
+          <p class="text-gray-600 mb-4">Dolphin watching and beautiful waterfall experience in North Bali.</p>
+          
+          <div class="mb-4">
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-clock text-[#005f73] mr-2"></i>
+              <span>12 Hours Tour</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-car text-[#005f73] mr-2"></i>
+              <span>Private Car + Driver</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <i class="fas fa-map-marker-alt text-[#005f73] mr-2"></i>
+              <span>North Bali</span>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded-lg mb-4">
+            <h4 class="font-semibold text-[#005f73] text-sm mb-2">Price Includes:</h4>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li>• Car + Driver</li>
+              <li>• Fuel</li>
+              <li>• Parking</li>
+            </ul>
+          </div>
+          
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <span class="text-2xl font-bold text-[#005f73]">Rp 800.000</span>
+              <span class="text-sm text-gray-500">USD 50</span>
+            </div>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          
+          <a href="paket/lovina.html" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            Show Details
+          </a>
+        </div>
+      </div>
+      
+      <!-- Paket 4 - Nusa Dua & Uluwatu -->
+      <div class="package-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in" data-category="culture">
+        <div class="relative">
+          <img src="media/Luxury resort in Bali, Ubud.jpeg" alt="Nusa Dua & Uluwatu" class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[#005f73] mb-4">Nusa Dua & Uluwatu Temple</h3>
+          <p class="text-gray-600 mb-4">Luxury beach area and spectacular cliff temple with Kecak dance performance.</p>
+          
+          <div class="mb-4">
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-clock text-[#005f73] mr-2"></i>
+              <span>1 Day Tour</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-car text-[#005f73] mr-2"></i>
+              <span>Private Car (per car)</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <i class="fas fa-map-marker-alt text-[#005f73] mr-2"></i>
+              <span>South Bali</span>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded-lg mb-4">
+            <h4 class="font-semibold text-[#005f73] text-sm mb-2">Price Includes:</h4>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li>• Car + Driver</li>
+              <li>• Fuel</li>
+              <li>• Parking</li>
+            </ul>
+            <p class="text-xs text-red-600 mt-2">Excludes: Entrance tickets & activities</p>
+          </div>
+          
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <span class="text-2xl font-bold text-[#005f73]">Rp 500.000</span>
+              <span class="text-sm text-gray-500">USD 32</span>
+              <span class="text-sm text-gray-500 ml-2">/car</span>
+            </div>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          
+          <a href="paket/uluwatu.html" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            Show Details
+          </a>
+        </div>
+      </div>
+      
+      <!-- Paket 5 - Nusa Penida -->
+      <div class="package-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in" data-category="island">
+        <div class="relative">
+          <img src="media/The Westin Resort Nusa Dua, Bali is perfect for families.jpeg" alt="Nusa Penida Tour" class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[#005f73] mb-4">Nusa Penida Island Tour</h3>
+          <p class="text-gray-600 mb-4">Explore the exotic beauty of Nusa Penida with stunning beaches and cliffs.</p>
+          
+          <div class="mb-4">
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-clock text-[#005f73] mr-2"></i>
+              <span>Full Day Tour</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-ship text-[#005f73] mr-2"></i>
+              <span>Round Trip Fast Boat</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <i class="fas fa-utensils text-[#005f73] mr-2"></i>
+              <span>Lunch Included</span>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded-lg mb-4">
+            <h4 class="font-semibold text-[#005f73] text-sm mb-2">Choose Your Trip:</h4>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li class="font-semibold">West Trip:</li>
+              <li>• Kelingking Beach</li>
+              <li>• Broken Beach</li>
+              <li>• Angel Billabong</li>
+              <li>• Crystal Bay</li>
+              <li class="font-semibold mt-2">East Trip:</li>
+              <li>• Diamond Beach</li>
+              <li>• Tree House</li>
+              <li>• Atuh Beach</li>
+            </ul>
+          </div>
+          
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <span class="text-2xl font-bold text-[#005f73]">Rp 1.000.000</span>
+              <span class="text-sm text-gray-500">USD 63</span>
+            </div>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          
+          <a href="paket/nusaPenida.html" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            Show Details
+          </a>
+        </div>
+      </div>
+      
+      <!-- Paket 6 - Ubud & Tanah Lot -->
+      <div class="package-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in" data-category="culture">
+        <div class="relative">
+          <img src="media/Tanah Lot Temple (1).jpeg" alt="Ubud & Tanah Lot" class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[#005f73] mb-4">Ubud & Tanah Lot Tour</h3>
+          <p class="text-gray-600 mb-4">Cultural experience in Ubud and sunset at the iconic Tanah Lot Temple.</p>
+          
+          <div class="mb-4">
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-clock text-[#005f73] mr-2"></i>
+              <span>1 Day Tour</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-car text-[#005f73] mr-2"></i>
+              <span>Private Car + Driver</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <i class="fas fa-map-marker-alt text-[#005f73] mr-2"></i>
+              <span>Ubud & West Bali</span>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded-lg mb-4">
+            <h4 class="font-semibold text-[#005f73] text-sm mb-2">Destinations:</h4>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li>• Monkey Forest</li>
+              <li>• Tegallalang Rice Terrace</li>
+              <li>• Bali Swing</li>
+              <li>• Tegenungan Waterfall</li>
+              <li>• Tanah Lot Temple</li>
+            </ul>
+            <p class="text-xs text-red-600 mt-2">Excludes: Entrance tickets</p>
+          </div>
+          
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <span class="text-2xl font-bold text-[#005f73]">Rp 600.000</span>
+              <span class="text-sm text-gray-500">USD 38</span>
+            </div>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          
+          <a href="paket/ubud.html" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            Show Details
+          </a>
+        </div>
+      </div>
+      
+      <!-- Paket 7 - Bali Fun Activities -->
+      <div class="package-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in" data-category="adventure">
+        <div class="relative">
+          <img src="media/bali.jpeg" alt="Bali Fun Activities" class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[#005f73] mb-4">Bali Fun Activities</h3>
+          <p class="text-gray-600 mb-4">Exciting water sports and adventure activities for thrill seekers.</p>
+          
+          <div class="mb-4">
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-clock text-[#005f73] mr-2"></i>
+              <span>Half Day Activity</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-water text-[#005f73] mr-2"></i>
+              <span>Water Sports Package</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <i class="fas fa-map-marker-alt text-[#005f73] mr-2"></i>
+              <span>Various Locations</span>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded-lg mb-4">
+            <h4 class="font-semibold text-[#005f73] text-sm mb-2">Activities Include:</h4>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li>• Rafting</li>
+              <li>• Parasailing</li>
+              <li>• Jet Ski</li>
+              <li>• Banana Boat</li>
+              <li>• And more</li>
+            </ul>
+          </div>
+          
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <span class="text-2xl font-bold text-[#005f73]">Rp 300.000</span>
+              <span class="text-sm text-gray-500">USD 19</span>
+            </div>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          
+          <a href="paket/baliFun.html" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            Show Details
+          </a>
+        </div>
+      </div>
+      
+      <!-- Paket 8 - Bali Zoo -->
+      <div class="package-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in" data-category="nature">
+        <div class="relative">
+          <img src="media/download (34).jpeg" alt="Bali Zoo" class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[#005f73] mb-4">Bali Zoo Experience</h3>
+          <p class="text-gray-600 mb-4">Unique wildlife experience with optional elephant riding or breakfast with orangutans.</p>
+          
+          <div class="mb-4">
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-clock text-[#005f73] mr-2"></i>
+              <span>Half Day Experience</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-paw text-[#005f73] mr-2"></i>
+              <span>Wildlife Encounter</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <i class="fas fa-map-marker-alt text-[#005f73] mr-2"></i>
+              <span>Bali Zoo</span>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded-lg mb-4">
+            <h4 class="font-semibold text-[#005f73] text-sm mb-2">Choose Your Package:</h4>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li>• Elephant Riding Experience</li>
+              <li>• OR Breakfast with Orangutan</li>
+              <li>• Zoo entrance included</li>
+              <li>• Animal interactions</li>
+            </ul>
+          </div>
+          
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <span class="text-2xl font-bold text-[#005f73]">Rp 1.000.000</span>
+              <span class="text-sm text-gray-500">USD 63</span>
+            </div>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          
+          <a href="paket/baliZoo.html" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            Show Details
+          </a>
+        </div>
+      </div>
+      
+      <!-- Paket 9 - Tukad Cepung Waterfall -->
+      <div class="package-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in" data-category="nature">
+        <div class="relative">
+          <img src="media/Amazing Private Tour_ Tukad Cepung Waterfall + 5 tourist objects.jpeg" alt="Tukad Cepung Waterfall" class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-[#005f73] mb-4">Tukad Cepung Waterfall</h3>
+          <p class="text-gray-600 mb-4">Discover the magical hidden waterfall with beautiful light beams.</p>
+          
+          <div class="mb-4">
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-clock text-[#005f73] mr-2"></i>
+              <span>Half Day Tour</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600 mb-1">
+              <i class="fas fa-hiking text-[#005f73] mr-2"></i>
+              <span>Easy Trekking</span>
+            </div>
+            <div class="flex items-center text-sm text-gray-600">
+              <i class="fas fa-map-marker-alt text-[#005f73] mr-2"></i>
+              <span>Bangli Regency</span>
+            </div>
+          </div>
+
+          <div class="bg-blue-50 p-3 rounded-lg mb-4">
+            <h4 class="font-semibold text-[#005f73] text-sm mb-2">Tour Includes:</h4>
+            <ul class="text-xs text-gray-600 space-y-1">
+              <li>• Transportation</li>
+              <li>• Guide service</li>
+              <li>• Waterfall access</li>
+            </ul>
+          </div>
+          
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <span class="text-2xl font-bold text-[#005f73]">Rp 400.000</span>
+              <span class="text-sm text-gray-500">USD 25</span>
+            </div>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          
+          <a href="paket/TukadCepung.html" class="block w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white text-center py-3 rounded-lg font-semibold hover:opacity-90 transition">
+            Show Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== Rating & Testimoni Section ===== -->
+<section id="rating" class="py-16 bg-gradient-to-b from-white to-[#f0f8ff]">
+  <div class="container mx-auto px-4">
+    
+    <!-- Header -->
+    <div class="text-center mb-12 fade-in">
+      <h2 class="text-3xl font-bold text-[#005f73] mb-4">Share Your Experience</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Bagikan pengalaman seru Anda selama tour bersama Afly Bali Tour. Cerita Anda akan membantu traveler lain memilih paket wisata terbaik!
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <!-- Form Rating - Kolom Kiri (2 kolom) -->
+      <div class="lg:col-span-2">
+        <div class="bg-white rounded-2xl shadow-xl p-8 fade-in">
+          <h3 class="text-2xl font-bold text-[#005f73] mb-6">Tulis Pengalaman Anda</h3>
+          
+          <form id="ratingForm" class="space-y-6">
+            <!-- Nama dan Email -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                  <i class="fas fa-user text-[#005f73] mr-2"></i>Nama Lengkap *
+                </label>
+                <input type="text" id="reviewerName" required 
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition"
+                       placeholder="Contoh: John Doe">
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                  <i class="fas fa-envelope text-[#005f73] mr-2"></i>Email
+                </label>
+                <input type="email" id="reviewerEmail" 
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition"
+                       placeholder="email@contoh.com">
+              </div>
+            </div>
+
+            <!-- Pilih Paket dan Rating -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                  <i class="fas fa-box text-[#005f73] mr-2"></i>Paket Wisata *
+                </label>
+                <select id="tourPackage" required 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition">
+                  <option value="">Pilih Paket</option>
+                  <option value="Bedugul Tour">Bedugul Tour</option>
+                  <option value="Heaven Gate & Tirta Gangga">Heaven Gate & Tirta Gangga</option>
+                  <option value="Lovina & Git Git Waterfall">Lovina & Git Git Waterfall</option>
+                  <option value="Nusa Dua & Uluwatu Temple">Nusa Dua & Uluwatu Temple</option>
+                  <option value="Nusa Penida Island Tour">Nusa Penida Island Tour</option>
+                  <option value="Ubud & Tanah Lot Tour">Ubud & Tanah Lot Tour</option>
+                  <option value="Bali Fun Activities">Bali Fun Activities</option>
+                  <option value="Bali Zoo Experience">Bali Zoo Experience</option>
+                  <option value="Tukad Cepung Waterfall">Tukad Cepung Waterfall</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                  <i class="fas fa-star text-[#005f73] mr-2"></i>Rating *
+                </label>
+                <div class="flex items-center space-x-2 text-2xl" id="ratingStars">
+                  <i class="far fa-star cursor-pointer hover:text-yellow-400 transition" data-rating="1"></i>
+                  <i class="far fa-star cursor-pointer hover:text-yellow-400 transition" data-rating="2"></i>
+                  <i class="far fa-star cursor-pointer hover:text-yellow-400 transition" data-rating="3"></i>
+                  <i class="far fa-star cursor-pointer hover:text-yellow-400 transition" data-rating="4"></i>
+                  <i class="far fa-star cursor-pointer hover:text-yellow-400 transition" data-rating="5"></i>
+                </div>
+                <input type="hidden" id="ratingValue" value="0">
+              </div>
+            </div>
+
+            <!-- Foto (Opsional) -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                <i class="fas fa-camera text-[#005f73] mr-2"></i>Upload Foto (Opsional)
+              </label>
+              <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-[#005f73] transition cursor-pointer" id="dropZone">
+                <input type="file" id="photoUpload" accept="image/*" class="hidden" multiple>
+                <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-2"></i>
+                <p class="text-gray-600">Klik atau drag & drop foto di sini</p>
+                <p class="text-xs text-gray-500 mt-1">Maksimal 5 foto (JPG, PNG)</p>
+                <div id="photoPreview" class="flex flex-wrap gap-2 mt-3"></div>
+              </div>
+            </div>
+
+            <!-- Review Text -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                <i class="fas fa-pen text-[#005f73] mr-2"></i>Cerita Pengalaman Anda *
+              </label>
+              <textarea id="reviewText" rows="4" required 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition"
+                        placeholder="Ceritakan pengalaman seru Anda selama tour..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" 
+                    class="w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition transform hover:scale-[1.02] flex items-center justify-center gap-2">
+              <i class="fas fa-paper-plane"></i>
+              Kirim Pengalaman
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Statistik Rating - Kolom Kanan -->
+      <div class="lg:col-span-1">
+        <div class="bg-white rounded-2xl shadow-xl p-8 fade-in sticky top-24">
+          <h3 class="text-xl font-bold text-[#005f73] mb-6">Rating Overview</h3>
+          
+          <!-- Average Rating -->
+          <div class="text-center mb-8">
+            <div class="text-5xl font-bold text-[#005f73]" id="avgRating">4.8</div>
+            <div class="flex justify-center text-yellow-400 text-xl my-2" id="avgStars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="text-gray-600" id="totalReviews">Berdasarkan 156 ulasan</div>
+          </div>
+
+          <!-- Rating Bars -->
+          <div class="space-y-3 mb-8">
+            <div class="flex items-center">
+              <span class="text-sm w-12">5 ★</span>
+              <div class="flex-1 h-2 bg-gray-200 rounded-full mx-3">
+                <div class="h-2 bg-green-500 rounded-full" style="width: 75%" id="rating5"></div>
+              </div>
+              <span class="text-sm text-gray-600" id="rating5Count">117</span>
+            </div>
+            <div class="flex items-center">
+              <span class="text-sm w-12">4 ★</span>
+              <div class="flex-1 h-2 bg-gray-200 rounded-full mx-3">
+                <div class="h-2 bg-green-400 rounded-full" style="width: 15%" id="rating4"></div>
+              </div>
+              <span class="text-sm text-gray-600" id="rating4Count">23</span>
+            </div>
+            <div class="flex items-center">
+              <span class="text-sm w-12">3 ★</span>
+              <div class="flex-1 h-2 bg-gray-200 rounded-full mx-3">
+                <div class="h-2 bg-yellow-400 rounded-full" style="width: 6%" id="rating3"></div>
+              </div>
+              <span class="text-sm text-gray-600" id="rating3Count">9</span>
+            </div>
+            <div class="flex items-center">
+              <span class="text-sm w-12">2 ★</span>
+              <div class="flex-1 h-2 bg-gray-200 rounded-full mx-3">
+                <div class="h-2 bg-orange-400 rounded-full" style="width: 2%" id="rating2"></div>
+              </div>
+              <span class="text-sm text-gray-600" id="rating2Count">4</span>
+            </div>
+            <div class="flex items-center">
+              <span class="text-sm w-12">1 ★</span>
+              <div class="flex-1 h-2 bg-gray-200 rounded-full mx-3">
+                <div class="h-2 bg-red-500 rounded-full" style="width: 2%" id="rating1"></div>
+              </div>
+              <span class="text-sm text-gray-600" id="rating1Count">3</span>
+            </div>
+          </div>
+
+          <!-- Top Reviews -->
+          <div>
+            <h4 class="font-semibold text-[#005f73] mb-3">Ulasan Terbaru</h4>
+            <div class="space-y-4" id="recentReviews">
+              <!-- Akan diisi oleh JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid Testimoni -->
+    <div class="mt-12">
+      <h3 class="text-2xl font-bold text-[#005f73] mb-6 text-center">Cerita dari Traveler Lain</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="testimoniGrid">
+        <!-- Akan diisi oleh JavaScript -->
+      </div>
+      
+      <!-- Load More Button -->
+      <div class="text-center mt-8">
+        <button id="loadMoreBtn" class="bg-white border-2 border-[#005f73] text-[#005f73] px-8 py-3 rounded-full font-semibold hover:bg-[#005f73] hover:text-white transition">
+          Load More Reviews
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== FAQ Section ===== -->
+  <section class="py-16 bg-[#f8fafc]">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12 fade-in">
+        <h2 class="text-3xl font-bold text-[#005f73] mb-4">Pertanyaan Umum</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Temukan jawaban untuk pertanyaan yang sering diajukan tentang paket wisata kami
+        </p>
+      </div>
+      
+      <div class="max-w-3xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-md p-6 mb-4 fade-in">
+          <h3 class="font-bold text-[#005f73] text-lg mb-2">Bagaimana cara memesan paket wisata?</h3>
+          <p class="text-gray-600">
+            Anda dapat memesan langsung melalui website dengan mengklik tombol "Pesan Sekarang" pada paket yang diinginkan, atau menghubungi kami via WhatsApp untuk konsultasi lebih lanjut.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md p-6 mb-4 fade-in">
+          <h3 class="font-bold text-[#005f73] text-lg mb-2">Apakah harga sudah termasuk akomodasi?</h3>
+          <p class="text-gray-600">
+            Ya, semua paket wisata kami sudah termasuk akomodasi, transportasi selama tour, tiket masuk objek wisata, dan pemandu wisata. Beberapa paket juga termasuk makan sesuai dengan detail yang tertera.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md p-6 mb-4 fade-in">
+          <h3 class="font-bold text-[#005f73] text-lg mb-2">Bisakah paket wisata disesuaikan?</h3>
+          <p class="text-gray-600">
+            Tentu saja! Kami dapat menyesuaikan paket sesuai kebutuhan Anda. Silakan hubungi kami untuk diskusi lebih lanjut mengenai penyesuaian itinerary, durasi, atau budget.
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md p-6 fade-in">
+          <h3 class="font-bold text-[#005f73] text-lg mb-2">Bagaimana dengan kebijakan pembatalan?</h3>
+          <p class="text-gray-600">
+            Pembatalan hingga 7 hari sebelum tanggal keberangkatan akan dikenakan biaya administrasi 10%. Pembatalan dalam 7 hari sebelum keberangkatan tidak dapat dikembalikan. Detail lengkap dapat dilihat pada syarat dan ketentuan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Footer ===== -->
+  <footer id="kontak" class="bg-[#005f73] text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
+              <span class="text-[#005f73] font-bold text-xl">A</span>
+            </div>
+            <div>
+              <h1 class="text-xl font-bold text-white">Afly Bali Tour</h1>
+              <p class="text-xs text-gray-300 -mt-1">Explore Paradise</p>
+            </div>
+          </div>
+          <p class="text-gray-300 text-sm">
+            Penyedia paket wisata Bali terpercaya dengan pengalaman lebih dari 5 tahun melayani wisatawan domestik dan mancanegara.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Tautan Cepat</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+            <li><a href="galeri/galeri.html" class="text-gray-300 hover:text-white transition">Galeri</a></li>
+            <li><a href="paket/paket.html" class="text-gray-300 hover:text-white transition">Paket Wisata</a></li>
+            <li><a href="booking/booking.html" class="text-gray-300 hover:text-white transition">Booking</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Kontak Kami</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-center">
+              <i class="fas fa-map-marker-alt mr-3 text-sm"></i>
+              <span>Denpasar, Bali, Indonesia</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3 text-sm"></i>
+              <span>aflybali@gmail.com</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone mr-3 text-sm"></i>
+              <span>+62 812-3456-7890</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="font-bold text-lg mb-4">Follow Kami</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300 text-sm">
+        <p>© 2025 Afly Bali Tour. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+   <script src="js/navbar-loader.js"></script>
+   <script src="js/ratting.js"></script>
+  <script>
+    // Animasi fade in saat scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      
+      const fadeInOnScroll = function() {
+        fadeElements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+          
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+          }
+        });
+      };
+      
+      // Set initial state
+      fadeElements.forEach(element => {
+        element.style.opacity = "0";
+        element.style.transform = "translateY(30px)";
+        element.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+      });
+      
+      // Check on load and scroll
+      window.addEventListener('scroll', fadeInOnScroll);
+      fadeInOnScroll();
+      
+
+      
+      // Filter functionality
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const packageCards = document.querySelectorAll('.package-card');
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => {
+            btn.classList.remove('bg-[#005f73]', 'text-white');
+            btn.classList.add('bg-white', 'text-[#005f73]', 'border', 'border-[#005f73]');
+          });
+          
+          // Add active class to clicked button
+          this.classList.remove('bg-white', 'text-[#005f73]', 'border', 'border-[#005f73]');
+          this.classList.add('bg-[#005f73]', 'text-white');
+          
+          const filter = this.getAttribute('data-filter');
+          
+          packageCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.classList.remove('package-hidden');
+            } else {
+              card.classList.add('package-hidden');
+            }
+          });
+        });
+      });
+    });
+  </script>
+  <style src="css/rattin.css"></style>
+</body>
+</html>
