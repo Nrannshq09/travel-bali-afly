@@ -66,7 +66,7 @@ class NavbarLoader {
             container.innerHTML = `
                 <nav class="bg-white shadow-lg fixed w-full z-50">
                     <div class="container mx-auto px-6 py-4">
-                        <a href="${this.basePath}index.html" class="text-2xl font-bold text-[#005f73]">Afly Bali Tour</a>
+                        <a href="${this.basePath}index.html" class="text-2xl font-bold text-[#005f73]">Afly Bali Explore</a>
                     </div>
                 </nav>
             `;

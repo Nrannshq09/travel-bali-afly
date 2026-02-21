@@ -54,53 +54,78 @@
   <!-- Navbar -->
   <div id="navbar-container"></div>
 
-<!-- ===== Hero Section ===== -->
-<section class="relative text-white py-12 min-h-[500px] flex items-center">
-  <!-- Background Image dengan Overlay -->
+<!-- ===== Hero Section dengan Background Gambar ===== -->
+<section class="relative text-white py-12 min-h-[600px] flex items-center">
+  <!-- Background Image HD dengan Overlay -->
   <div class="absolute inset-0 z-0">
-    <img src="../galery/Nusa Penida Island in the Lesser Sunda Islands, Indonesia.jfif" alt="Nusa Penida Background" class="w-full h-full object-cover">
-    <div class="absolute inset-0 bg-black/50"></div> <!-- Overlay gelap agar teks terbaca -->
+    <picture>
+      <!-- Gunakan format JPG yang lebih umum -->
+      <source 
+        srcset="
+          ../galery/penida (1).jpeg 480w,
+          ../galery/penida (1).jpeg 768w,
+          ../galery/penida (1).jpeg 1080w,
+          ../galery/penida (1).jpeg 1920w
+        "
+        sizes="100vw"
+        type="image/jpeg"
+      >
+      <!-- Gambar default -->
+      <img 
+        src="../galery/penida (1).jpeg" 
+        alt="Nusa Penida Island Background" 
+        class="w-full h-full object-cover"
+        loading="eager"
+        fetchpriority="high"
+        onerror="this.onerror=null; this.src='../galery/fallback-image.jpg';"
+      >
+    </picture>
+    <div class="absolute inset-0 bg-black/50"></div>
   </div>
   
   <div class="container mx-auto px-4 relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
       <!-- Konten Teks -->
       <div class="fade-in">
-        <!-- Rating -->
-        <div class="flex items-center mb-4">
-          <div class="flex text-yellow-400 mr-3">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <span class="text-lg">5.0 (245 Review)</span>
-        </div>
         
         <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
           Nusa Penida Island Tour
         </h1>
         
         <p class="text-xl mb-8 leading-relaxed">
-          Jelajahi keindahan eksotis Pulau Nusa Penida dengan pantai-pantai memukau dan tebing-tebing dramatis. Kunjungi spot-spot ikonik seperti Kelingking Beach, Broken Beach, Angel Billabong, dan Crystal Bay dalam satu hari penuh petualangan.
+          Explore the exotic beauty of Nusa Penida Island with stunning beaches and dramatic cliffs. Visit iconic spots like Kelingking Beach, Broken Beach, Angel Billabong, and Crystal Bay in one full day of adventure.
         </p>
         
         <div class="flex flex-wrap gap-4">
           <a href="#booking" class="bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition duration-300 flex items-center">
             <i class="fas fa-calendar-check mr-2"></i>
-            Booking This Product
+            Book This Tour
           </a>
-          <a href="https://wa.me/6281234567890" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition duration-300 flex items-center">
+          <a href="https://wa.me/6282144094585" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition duration-300 flex items-center">
             <i class="fab fa-whatsapp mr-2"></i>
             WhatsApp
           </a>
         </div>
       </div>
       
-      <!-- Bagian kanan bisa dikosongkan atau diisi konten lain jika diperlukan -->
-      <div class="fade-in hidden lg:block">
-        <!-- Bisa diisi dengan elemen dekoratif atau dikosongkan -->
+      <!-- Gambar Hero -->
+      <div class="fade-in">
+        <div class="rounded-2xl overflow-hidden shadow-2xl h-96 lg:h-[450px] relative border-4 border-white/20">
+          <img 
+            src="../galery/penida (1).jpeg" 
+            alt="Nusa Penida Island" 
+            class="w-full h-full object-cover"
+            loading="lazy"
+            onerror="this.onerror=null; this.src='../galery/fallback-image.jpg';"
+          >
+          <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+            <div class="flex items-center text-white mb-2">
+              <i class="fas fa-map-marker-alt mr-2"></i>
+              <span>Nusa Penida Island, Bali, Indonesia</span>
+            </div>
+            <h3 class="text-xl font-bold">Kelingking Beach - The T-Rex Cliff</h3>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -273,13 +298,13 @@
             <h2 class="text-3xl font-bold text-[#005f73] mb-6">Gallery</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div class="rounded-xl overflow-hidden h-32">
-                <img src="../media/kelingking-beach.jpeg" alt="Kelingking Beach" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                <img src="../galery/penida (5).jfif" alt="Kelingking Beach" class="w-full h-full object-cover hover:scale-110 transition duration-500">
               </div>
               <div class="rounded-xl overflow-hidden h-32">
-                <img src="../media/broken-beach.jpeg" alt="Broken Beach" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                <img src="../galery/penida (4).jfif" alt="Broken Beach" class="w-full h-full object-cover hover:scale-110 transition duration-500">
               </div>
               <div class="rounded-xl overflow-hidden h-32">
-                <img src="../media/diamond-beach.jpeg" alt="Diamond Beach" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                <img src="../galery/penida (1).jpeg" alt="Diamond Beach" class="w-full h-full object-cover hover:scale-110 transition duration-500">
               </div>
             </div>
           </div>
@@ -342,21 +367,14 @@
           <div id="booking" class="price-card bg-white rounded-2xl shadow-xl p-6 sticky top-32 fade-in">
             <div class="text-center mb-6">
               <h3 class="text-2xl font-bold text-[#005f73] mb-2">Nusa Penida Tour</h3>
-              <div class="flex items-center justify-center text-yellow-400 mb-4">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span class="text-gray-600 ml-2 text-sm">5.0 (245 Review)</span>
-              </div>
+              
             </div>
             
             <div class="bg-blue-50 p-4 rounded-xl mb-6">
               <div class="text-center">
-                <span class="text-3xl font-bold text-[#005f73]">IDR 1.000.000</span>
-                <p class="text-gray-600 text-sm">Harga per orang</p>
-                <p class="text-xs text-gray-500 mt-1">≈ USD 63 /person</p>
+                <span class="text-3xl font-bold text-[#005f73]">USD 63</span>
+                <p class="text-gray-600 text-sm">Price per Person</p>
+                <p class="text-xs text-gray-500 mt-1">≈ IDR 1.000.000 /orang</p>
               </div>
             </div>
             
@@ -366,7 +384,7 @@
                 Book Now
               </a>
               
-              <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20paket%20Nusa%20Penida%20Island%20Tour" 
+              <a href="https://wa.me/6282144094585?text=Hello,%20I%20want%20to%20ask%20about%20the%20Nusa%20Penida%20Island%20Tour%20budget"
                  class="block w-full bg-green-500 text-white text-center py-4 rounded-xl font-bold text-lg hover:bg-green-600 transition flex items-center justify-center">
                 <i class="fab fa-whatsapp mr-2"></i>
                 WhatsApp

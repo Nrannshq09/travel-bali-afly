@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuttle Airport Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- ===== Airport Shuttle Booking Section ===== -->
+<section class="py-16 bg-gradient-to-br from-[#f0f8ff] to-white">
+    <div class="container mx-auto px-4">
+        
+        <!-- Header -->
+        <div class="text-center mb-12 fade-in">
+            <span class="bg-[#005f73] text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                <i class="fas fa-shuttle-van mr-2"></i>Airport Transfer
+            </span>
+            <h2 class="text-3xl font-bold text-[#005f73] mb-4">Airport Shuttle Service</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Book your convenient airport transfer from Ngurah Rai International Airport (DPS) to your destination in Bali. Professional driver, comfortable vehicle, and fixed prices.
+            </p>
+        </div>
+
+
+        <!-- Detailed Booking Form -->
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden fade-in">
+            <div class="bg-gradient-to-r from-[#005f73] to-[#0077b6] p-6 text-white">
+                <h3 class="text-2xl font-bold mb-2">Airport Transfer Booking Form</h3>
+                <p class="text-white/90">Fill in your details to get a personalized quote via WhatsApp</p>
+            </div>
+            
+            <div class="p-8">
+                <form id="airportBookingForm" class="space-y-6">
+                    <!-- Flight Details -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                <i class="fas fa-plane-arrival text-[#005f73] mr-2"></i>
+                                Flight Number
+                            </label>
+                            <input type="text" id="flightNumber" placeholder="e.g., QZ 810" 
+                                   class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                <i class="fas fa-clock text-[#005f73] mr-2"></i>
+                                Arrival Time
+                            </label>
+                            <input type="time" id="arrivalTime" 
+                                   class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition">
+                        </div>
+                    </div>
+
+                    <!-- Destination -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-map-marker-alt text-[#005f73] mr-2"></i>
+                            Destination *
+                        </label>
+                        <select id="airportDestination" required 
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition">
+                            <option value="">Select your destination</option>
+                            <option value="Kuta / Legian - IDR 100K">Kuta / Legian (IDR 100K)</option>
+                            <option value="Seminyak / Canggu - IDR 250K">Seminyak / Canggu (IDR 250K)</option>
+                            <option value="Nusa Dua - IDR 250K">Nusa Dua (IDR 250K)</option>
+                            <option value="Uluwatu - IDR 300K">Uluwatu (IDR 300K)</option>
+                            <option value="Other">Other (Custom destination)</option>
+                        </select>
+                    </div>
+
+                    <!-- Custom Destination (shown only if Other selected) -->
+                    <div id="customDestinationField" class="hidden">
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-map-pin text-[#005f73] mr-2"></i>
+                            Please specify your destination
+                        </label>
+                        <input type="text" id="customDestination" placeholder="e.g., Sanur, Ubud, Jimbaran..." 
+                               class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition">
+                    </div>
+
+                    <!-- Hotel/Accommodation -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-hotel text-[#005f73] mr-2"></i>
+                            Hotel/Accommodation Name *
+                        </label>
+                        <input type="text" id="hotelName" placeholder="e.g., The Kuta Beach Hotel" required
+                               class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition">
+                    </div>
+
+                    <!-- Passengers -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                <i class="fas fa-user text-[#005f73] mr-2"></i>
+                                Number of Passengers *
+                            </label>
+                            <select id="passengers" required 
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition">
+                                <option value="1">1 Passenger</option>
+                                <option value="2">2 Passengers</option>
+                                <option value="3">3 Passengers</option>
+                                <option value="4">4 Passengers</option>
+                                <option value="5">5+ Passengers (need bigger vehicle)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                <i class="fas fa-suitcase text-[#005f73] mr-2"></i>
+                                Luggage
+                            </label>
+                            <select id="luggage" 
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition">
+                                <option value="1-2">1-2 suitcases</option>
+                                <option value="3-4">3-4 suitcases</option>
+                                <option value="5+">5+ suitcases</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                <i class="fas fa-user-circle text-[#005f73] mr-2"></i>
+                                Your Name *
+                            </label>
+                            <input type="text" id="passengerName" placeholder="e.g., John Doe" required
+                                   class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                <i class="fas fa-phone-alt text-[#005f73] mr-2"></i>
+                                Phone Number (WA) *
+                            </label>
+                            <input type="tel" id="phoneNumber" placeholder="e.g., 08123456789" required
+                                   class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition">
+                        </div>
+                    </div>
+
+                    <!-- Additional Notes -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-pen text-[#005f73] mr-2"></i>
+                            Special Requests (Optional)
+                        </label>
+                        <textarea id="specialRequests" rows="3" 
+                                  placeholder="e.g., Baby seat needed, wheelchair assistance, etc."
+                                  class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005f73] focus:ring-2 focus:ring-[#005f73]/20 transition"></textarea>
+                    </div>
+
+                    <!-- Important Info -->
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-[#005f73] mb-2 flex items-center">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            Important Information:
+                        </h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Free waiting time: 60 minutes from flight landing</li>
+                            <li>• Flight tracking included - we monitor your flight status</li>
+                            <li>• Meet & greet service with name board at arrival hall</li>
+                            <li>• Price includes all taxes, no hidden fees</li>
+                            <li>• Payment via cash or bank transfer</li>
+                        </ul>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="button" onclick="submitAirportBooking()" 
+                            class="w-full bg-gradient-to-r from-[#005f73] to-[#0077b6] text-white py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition transform hover:scale-[1.02] flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        Get Quote via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Additional Destinations Note -->
+        <div class="mt-8 text-center">
+            <div class="inline-block bg-yellow-50 px-6 py-3 rounded-full">
+                <p class="text-sm text-gray-600">
+                    <i class="fas fa-info-circle text-yellow-500 mr-2"></i>
+                    For other destinations (Sanur, Ubud, Jimbaran, etc.) please use the booking form above or contact us directly.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Function for quick booking from price cards
+function openAirportBooking(destination, price) {
+    const message = `Hello, I would like to book airport transfer:%0A%0A` +
+                    `Destination: ${destination}%0A` +
+                    `Price: IDR ${price.toLocaleString('id-ID')}%0A%0A` +
+                    `I will provide more details via this chat. Thank you!`;
+    
+    window.open(`https://wa.me/6282144094585?text=${message}`, '_blank');
+}
+
+// Function for detailed booking form
+function submitAirportBooking() {
+    // Get form values
+    const flightNumber = document.getElementById('flightNumber').value;
+    const arrivalTime = document.getElementById('arrivalTime').value;
+    const destinationSelect = document.getElementById('airportDestination');
+    const destination = destinationSelect.options[destinationSelect.selectedIndex]?.text || '';
+    const customDestination = document.getElementById('customDestination').value;
+    const hotelName = document.getElementById('hotelName').value;
+    const passengers = document.getElementById('passengers').value;
+    const luggage = document.getElementById('luggage').value;
+    const passengerName = document.getElementById('passengerName').value;
+    const phoneNumber = document.getElementById('phoneNumber').value;
+    const specialRequests = document.getElementById('specialRequests').value;
+
+    // Validation
+    if (!destination || destination === 'Select your destination') {
+        alert('Please select your destination');
+        return;
+    }
+    
+    if (!hotelName) {
+        alert('Please enter your hotel/accommodation name');
+        return;
+    }
+    
+    if (!passengerName) {
+        alert('Please enter your name');
+        return;
+    }
+    
+    if (!phoneNumber) {
+        alert('Please enter your phone number');
+        return;
+    }
+
+    // Format final destination
+    let finalDestination = destination;
+    if (destination === 'Other (Custom destination)' && customDestination) {
+        finalDestination = customDestination;
+    }
+
+    // Build message
+    let message = `Hello Afly Bali Tour,%0A%0A`;
+    message += `I would like to book airport transfer with the following details:%0A%0A`;
+    
+    message += `Passenger Name: ${passengerName}%0A`;
+    message += `Phone Number: ${phoneNumber}%0A`;
+    message += `Flight Number: ${flightNumber || 'Not specified'}%0A`;
+    message += `Arrival Time: ${arrivalTime || 'Not specified'}%0A`;
+    message += `Destination: ${finalDestination}%0A`;
+    message += `Hotel: ${hotelName}%0A`;
+    message += `Number of Passengers: ${passengers}%0A`;
+    message += `Luggage: ${luggage || 'Not specified'}%0A`;
+    
+    if (specialRequests) {
+        message += `Special Requests: ${specialRequests}%0A`;
+    }
+    
+    message += `%0APlease provide me with the confirmation and further instructions.`;
+    message += `%0AThank you!`;
+
+    // Open WhatsApp
+    window.open(`https://wa.me/6282144094585?text=${message}`, '_blank');
+}
+
+// Show/hide custom destination field
+document.addEventListener('DOMContentLoaded', function() {
+    const destinationSelect = document.getElementById('airportDestination');
+    const customField = document.getElementById('customDestinationField');
+    
+    if (destinationSelect) {
+        destinationSelect.addEventListener('change', function() {
+            if (this.value === 'Other') {
+                customField.classList.remove('hidden');
+            } else {
+                customField.classList.add('hidden');
+            }
+        });
+    }
+});
+</script>
+
+<style>
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</body>
+</html>
